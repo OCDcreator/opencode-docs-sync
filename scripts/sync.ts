@@ -144,6 +144,95 @@ async function syncLanguage(
   log(`  ✓ ${langSource || "(root)"} → ${langOutput}/: ${converted} files`)
 }
 
+// ─── Architecture Index Generator ────────────────────────────────
+
+/** Architecture tree: category → subcategory → doc files */
+const ARCH = {
+  "配置系统": {
+    "核心配置": ["config", "permissions", "rules"],
+    "模型 & 提供商": ["models", "providers", "network"],
+    "代理 & 技能": ["agents", "skills"],
+    "工具生态": ["tools", "custom-tools", "mcp-servers", "lsp", "plugins"],
+    "代码质量": ["formatters"],
+    "UI & 交互": ["themes", "keybinds", "commands", "tui"],
+  },
+  "使用方式": {
+    "界面": ["cli", "web", "ide"],
+    "平台": ["windows-wsl"],
+  },
+  "集成 & 扩展": {
+    "版本控制": ["github", "gitlab"],
+    "协议": ["acp"],
+    "开发": ["sdk", "server"],
+  },
+  "参考": {
+    "": ["troubleshooting"],
+  },
+}
+
+// Display titles for doc stems
+const TITLES: Record<string, string> = {
+  config: "JSON 配置详解",
+  permissions: "权限系统",
+  rules: "规则 & 指令 (AGENTS.md)",
+  models: "模型配置 & 变体",
+  providers: "75+ 提供商目录",
+  network: "网络配置",
+  agents: "代理系统 (Build/Plan/子代理)",
+  skills: "代理技能 (SKILL.md)",
+  tools: "14 种内置工具",
+  "custom-tools": "自定义工具 (.ts)",
+  "mcp-servers": "MCP 服务器",
+  lsp: "LSP 服务器 (33 种语言)",
+  plugins: "插件系统",
+  formatters: "25 种格式化工具",
+  themes: "主题系统 (11 内置 + 自定义)",
+  keybinds: "70+ 快捷键",
+  commands: "自定义命令",
+  tui: "TUI 终端界面",
+  cli: "CLI 命令行",
+  web: "Web 界面",
+  ide: "IDE 扩展",
+  "windows-wsl": "Windows & WSL",
+  github: "GitHub 集成",
+  gitlab: "GitLab 集成",
+  acp: "ACP 协议 (Zed/JetBrains)",
+  sdk: "SDK 开发",
+  server: "Server 模式",
+  troubleshooting: "故障排除",
+}
+
+function generateIndex(langDir: string) {
+  const lines: string[] = [
+    `# OpenCode 文档架构导航`,
+    ``,
+    `> 所有配置能力的层级索引，每个链接直接跳转到对应文档。`,
+    ``,
+  ]
+
+  for (const [category, subs] of Object.entries(ARCH)) {
+    lines.push(`## ${category}`)
+    lines.push("")
+    for (const [sub, stems] of Object.entries(subs)) {
+      if (sub) {
+        lines.push(`### ${sub}`)
+        lines.push("")
+      }
+      for (const stem of stems) {
+        const title = TITLES[stem] ?? stem
+        lines.push(`- [${title}](${stem}.md)`)
+      }
+      lines.push("")
+    }
+  }
+
+  const content = lines.join("\n").trim() + "\n"
+  const outPath = join(OUTPUT_DIR, langDir, "INDEX.md")
+  mkdirSync(dirname(outPath), { recursive: true })
+  writeFileSync(outPath, content, "utf-8")
+  log(`  INDEX → ${langDir}/INDEX.md`)
+}
+
 // ─── Main ────────────────────────────────────────────────────────
 
 async function main() {
@@ -188,6 +277,12 @@ async function main() {
     JSON.stringify(metadata, null, 2) + "\n",
   )
   log(`Metadata written to docs/.sync-meta.json`)
+
+  // Generate architecture index for each language
+  log("Generating architecture index...")
+  for (const lang of LANGUAGES) {
+    generateIndex(lang.output)
+  }
 
   // Clean up
   await $`rm -rf ${TEMP_DIR}`.quiet()
