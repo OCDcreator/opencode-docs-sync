@@ -5,7 +5,7 @@ description: ブラウザで OpenCode を使用する。
 
 OpenCode はブラウザで Web アプリケーションとして実行でき、ターミナルを必要とせずに同じ強力な AI コーディングエクスペリエンスを提供します。
 
-![OpenCode Web - 新しいセッション](../../../assets/web/web-homepage-new-session.png)
+![OpenCode Web - 新しいセッション](https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/web/assets/web/web-homepage-new-session.png)
 
 ---
 
@@ -100,13 +100,13 @@ OPENCODE_SERVER_PASSWORD=secret opencode web
 
 ホームページからセッションを表示および管理します。アクティブなセッションを確認したり、新しいセッションを開始したりできます。
 
-![OpenCode Web - アクティブなセッション](../../../assets/web/web-homepage-active-session.png)
+![OpenCode Web - アクティブなセッション](https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/web/assets/web/web-homepage-active-session.png)
 
 ### サーバーステータス
 
 「サーバーを表示」をクリックすると、接続されているサーバーとそのステータスが表示されます。
 
-![OpenCode Web - サーバー](../../../assets/web/web-homepage-see-servers.png)
+![OpenCode Web - サーバー](https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/web/assets/web/web-homepage-see-servers.png)
 
 ---
 

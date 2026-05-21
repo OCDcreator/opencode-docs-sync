@@ -33,7 +33,7 @@ function log(msg: string) {
 }
 
 /** Strip Astro/MDX-specific syntax, converting to plain Markdown */
-function mdxToMd(content: string): string {
+function mdxToMd(content: string, langSource: string): string {
   let result = content
 
   // Remove Astro component imports (import X from "...")
@@ -68,6 +68,22 @@ function mdxToMd(content: string): string {
       const label = type.charAt(0).toUpperCase() + type.slice(1)
       const lines = content.trim().split("\n")
       return `> **${label}**\n>\n${lines.map((l: string) => `> ${l}`).join("\n")}\n`
+    },
+  )
+
+  // Rewrite relative image paths → absolute GitHub raw URLs
+  // Source MDX lives at packages/web/src/content/docs/{langSource}/file.mdx
+  // Resolve relative paths from that location, then prefix with repo root
+  const GH_RAW = `https://raw.githubusercontent.com/anomalyco/opencode/${SYNC_REF}`
+  const DOCS_ROOT = `packages/web/src/content/docs`
+  const fileDir = langSource === "" ? DOCS_ROOT : `${DOCS_ROOT}/${langSource}`
+  result = result.replace(
+    /(!\[[^\]]*\]\()(\.{2}\/[^)]+)(\))/g,
+    (_, prefix, relPath, suffix) => {
+      const resolved = join(fileDir, relPath)
+        .replaceAll("\\", "/")
+        .replace(/\/{2,}/g, "/")
+      return `${prefix}${GH_RAW}/${resolved}${suffix}`
     },
   )
 
@@ -131,7 +147,7 @@ async function syncLanguage(
     const content = await Bun.file(fullPath).text()
 
     // Convert MDX to MD
-    const mdContent = mdxToMd(content)
+    const mdContent = mdxToMd(content, langSource)
 
     // Ensure output subdirectory exists
     mkdirSync(dirname(outputPath), { recursive: true })
@@ -146,7 +162,6 @@ async function syncLanguage(
 
 // ─── Architecture Index Generator ────────────────────────────────
 
-/** Architecture tree: category → subcategory → doc files */
 const ARCH = {
   "配置系统": {
     "核心配置": ["config", "permissions", "rules"],
@@ -170,7 +185,6 @@ const ARCH = {
   },
 }
 
-// Display titles for doc stems
 const TITLES: Record<string, string> = {
   config: "JSON 配置详解",
   permissions: "权限系统",
@@ -202,14 +216,13 @@ const TITLES: Record<string, string> = {
   troubleshooting: "故障排除",
 }
 
-function generateIndex(langDir: string) {
+function buildIndexContent(prefix: string) {
   const lines: string[] = [
     `# OpenCode 文档架构导航`,
     ``,
     `> 所有配置能力的层级索引，每个链接直接跳转到对应文档。`,
     ``,
   ]
-
   for (const [category, subs] of Object.entries(ARCH)) {
     lines.push(`## ${category}`)
     lines.push("")
@@ -220,17 +233,36 @@ function generateIndex(langDir: string) {
       }
       for (const stem of stems) {
         const title = TITLES[stem] ?? stem
-        lines.push(`- [${title}](${stem}.md)`)
+        lines.push(`- [${title}](${prefix}${stem}.md)`)
       }
       lines.push("")
     }
   }
+  return lines.join("\n").trim() + "\n"
+}
 
-  const content = lines.join("\n").trim() + "\n"
+function generateIndex(langDir: string) {
+  const content = buildIndexContent("")
   const outPath = join(OUTPUT_DIR, langDir, "INDEX.md")
   mkdirSync(dirname(outPath), { recursive: true })
   writeFileSync(outPath, content, "utf-8")
   log(`  INDEX → ${langDir}/INDEX.md`)
+}
+
+function generateRootIndex() {
+  const lines: string[] = [
+    `# OpenCode 文档导航`,
+    ``,
+    `选择语言 / Select language:`,
+    ``,
+    `## [中文文档](zh-cn/INDEX.md)`,
+    ``,
+    `## [English Docs](en/INDEX.md)`,
+    ``,
+  ]
+  const outPath = join(OUTPUT_DIR, "INDEX.md")
+  writeFileSync(outPath, lines.join("\n"), "utf-8")
+  log(`  INDEX → docs/INDEX.md (root)`)
 }
 
 // ─── Main ────────────────────────────────────────────────────────
@@ -278,11 +310,12 @@ async function main() {
   )
   log(`Metadata written to docs/.sync-meta.json`)
 
-  // Generate architecture index for each language
+  // Generate architecture index
   log("Generating architecture index...")
   for (const lang of LANGUAGES) {
     generateIndex(lang.output)
   }
+  generateRootIndex()
 
   // Clean up
   await $`rm -rf ${TEMP_DIR}`.quiet()

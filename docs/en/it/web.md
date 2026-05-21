@@ -5,7 +5,7 @@ description: Usa OpenCode nel browser.
 
 OpenCode puo funzionare come applicazione web nel browser, offrendo la stessa potente esperienza di coding AI senza bisogno di un terminale.
 
-![OpenCode Web - Nuova sessione](../../../assets/web/web-homepage-new-session.png)
+![OpenCode Web - Nuova sessione](https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/web/assets/web/web-homepage-new-session.png)
 
 ## Per iniziare
 
@@ -98,13 +98,13 @@ Una volta avviata, l'interfaccia web ti da accesso alle tue sessioni OpenCode.
 
 Visualizza e gestisci le sessioni dalla homepage. Puoi vedere le sessioni attive e avviarne di nuove.
 
-![OpenCode Web - Sessione attiva](../../../assets/web/web-homepage-active-session.png)
+![OpenCode Web - Sessione attiva](https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/web/assets/web/web-homepage-active-session.png)
 
 ### Stato del server
 
 Fai clic su "See Servers" per vedere i server connessi e il loro stato.
 
-![OpenCode Web - See Servers](../../../assets/web/web-homepage-see-servers.png)
+![OpenCode Web - See Servers](https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/web/assets/web/web-homepage-see-servers.png)
 
 ---
 

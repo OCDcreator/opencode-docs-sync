@@ -5,7 +5,7 @@ description: Korišćenje OpenCode u vašem pretraživaču.
 
 OpenCode može raditi kao web aplikacija u vašem pretraživaču, pružajući isto moćno iskustvo AI kodiranja bez potrebe za terminalom.
 
-![OpenCode Web - Nova sesija](../../../assets/web/web-homepage-new-session.png)
+![OpenCode Web - Nova sesija](https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/web/assets/web/web-homepage-new-session.png)
 
 ## Početak rada
 
@@ -98,13 +98,13 @@ Jednom pokrenut, web sučelje pruža pristup vašim OpenCode sesijama.
 
 Pregledajte i upravljajte svojim sesijama sa početne stranice. Možete vidjeti aktivne sesije i započeti nove.
 
-![OpenCode Web - aktivna sesija](../../../assets/web/web-homepage-active-session.png)
+![OpenCode Web - aktivna sesija](https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/web/assets/web/web-homepage-active-session.png)
 
 ### Status servera
 
 Kliknite "Pogledajte servere" da vidite povezane servere i njihov status.
 
-![OpenCode Web - Vidi servere](../../../assets/web/web-homepage-see-servers.png)
+![OpenCode Web - Vidi servere](https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/web/assets/web/web-homepage-see-servers.png)
 
 ---
 

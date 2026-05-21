@@ -5,7 +5,7 @@ description: Использование opencode в вашем браузере.
 
 opencode может работать как веб-приложение в вашем браузере, обеспечивая такой же мощный опыт кодирования AI без необходимости использования терминала.
 
-![opencode Web — новый сеанс](../../../assets/web/web-homepage-new-session.png)
+![opencode Web — новый сеанс](https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/web/assets/web/web-homepage-new-session.png)
 
 ## Начало работы
 
@@ -98,13 +98,13 @@ OPENCODE_SERVER_PASSWORD=secret opencode web
 
 Просматривайте свои сеансы и управляйте ими с главной страницы. Вы можете видеть активные сеансы и начинать новые.
 
-![opencode Web — активный сеанс](../../../assets/web/web-homepage-active-session.png)
+![opencode Web — активный сеанс](https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/web/assets/web/web-homepage-active-session.png)
 
 ### Статус сервера
 
 Нажмите «Просмотреть серверы», чтобы просмотреть подключенные серверы и их статус.
 
-![opencode Web — см. Серверы](../../../assets/web/web-homepage-see-servers.png)
+![opencode Web — см. Серверы](https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/web/assets/web/web-homepage-see-servers.png)
 
 ---
 

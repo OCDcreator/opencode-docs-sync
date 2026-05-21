@@ -5,7 +5,7 @@ description: Korzystanie z opencode w przeglądarce.
 
 opencode może działać jako aplikacja internetowa w przeglądarce, zapewniając takie same możliwości kodowania AI bez konieczności korzystania z terminala.
 
-![Sieć opencode - Nowa sesja](../../../assets/web/web-homepage-new-session.png)
+![Sieć opencode - Nowa sesja](https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/web/assets/web/web-homepage-new-session.png)
 
 ## Pierwsze kroki
 
@@ -98,13 +98,13 @@ Po uruchomieniu interfejs sieciowy zapewnia dostęp do sesji opencode.
 
 Przeglądaj sesje i zarządzaj nimi ze strony głównej. Możesz zobaczyć aktywne sesje i rozpocząć nowe.
 
-![opencode Web - Aktywna sesja](../../../assets/web/web-homepage-active-session.png)
+![opencode Web - Aktywna sesja](https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/web/assets/web/web-homepage-active-session.png)
 
 ### Stan serwera
 
 Kliknij „Zobacz serwery”, aby wyświetlić podłączone serwery i ich status.
 
-![opencode Web - See Servers](../../../assets/web/web-homepage-see-servers.png)
+![opencode Web - See Servers](https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/web/assets/web/web-homepage-see-servers.png)
 
 ---
 

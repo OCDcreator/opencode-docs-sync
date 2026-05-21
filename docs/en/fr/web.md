@@ -5,7 +5,7 @@ description: En utilisant OpenCode dans votre navigateur.
 
 OpenCode peut s'exécuter comme une application Web dans votre navigateur, offrant la même expérience puissante de codage d'IA sans avoir besoin d'un terminal.
 
-![OpenCode Web - Nouvelle session](../../../assets/web/web-homepage-new-session.png)
+![OpenCode Web - Nouvelle session](https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/web/assets/web/web-homepage-new-session.png)
 
 ## Commencer
 
@@ -98,13 +98,13 @@ Une fois démarrée, l'interface web permet d'accéder à vos sessions OpenCode.
 
 Consultez et gérez vos sessions depuis la page d'accueil. Vous pouvez voir les sessions actives et en démarrer de nouvelles.
 
-![OpenCode Web - Session active](../../../assets/web/web-homepage-active-session.png)
+![OpenCode Web - Session active](https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/web/assets/web/web-homepage-active-session.png)
 
 ### Statut du serveur
 
 Cliquez sur "Voir les serveurs" pour afficher les serveurs connectés et leur état.
 
-![OpenCode Web - Voir Serveurs](../../../assets/web/web-homepage-see-servers.png)
+![OpenCode Web - Voir Serveurs](https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/web/assets/web/web-homepage-see-servers.png)
 
 ---
 

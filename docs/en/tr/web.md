@@ -5,7 +5,7 @@ description: Tarayıcınızda opencode'u kullanma.
 
 opencode, tarayıcınızda bir web uygulaması olarak çalışabilir ve bir terminale ihtiyaç duymadan aynı güçlü AI kodlama deneyimini sağlayabilir.
 
-![opencode Web - Yeni Oturum](../../../assets/web/web-homepage-new-session.png)
+![opencode Web - Yeni Oturum](https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/web/assets/web/web-homepage-new-session.png)
 
 ## Başlarken
 
@@ -98,13 +98,13 @@ Web arayüzü başlatıldığında opencode oturumlarınıza erişim sağlar.
 
 Oturumlarınızı ana sayfadan görüntüleyin ve yönetin. Aktif oturumları görebilir ve yenilerini başlatabilirsiniz.
 
-![opencode Web - Etkin Oturum](../../../assets/web/web-homepage-active-session.png)
+![opencode Web - Etkin Oturum](https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/web/assets/web/web-homepage-active-session.png)
 
 ### Sunucu Durumu
 
 Bağlı sunucuları ve durumlarını görüntülemek için "Sunucuları Gör" seçeneğini tıklayın.
 
-![opencode Web - Sunuculara bakın](../../../assets/web/web-homepage-see-servers.png)
+![opencode Web - Sunuculara bakın](https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/web/assets/web/web-homepage-see-servers.png)
 
 ---
 

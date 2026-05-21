@@ -5,7 +5,7 @@ description: استخدام OpenCode في متصفحك.
 
 يمكن تشغيل OpenCode كتطبيق ويب داخل متصفحك، ليمنحك تجربة البرمجة القوية بالذكاء الاصطناعي نفسها دون الحاجة إلى terminal.
 
-![OpenCode Web - جلسة جديدة](../../../assets/web/web-homepage-new-session.png)
+![OpenCode Web - جلسة جديدة](https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/web/assets/web/web-homepage-new-session.png)
 
 ## البدء
 
@@ -98,13 +98,13 @@ OPENCODE_SERVER_PASSWORD=secret opencode web
 
 اعرض جلساتك وأدرها من الصفحة الرئيسية. يمكنك رؤية الجلسات النشطة وبدء جلسات جديدة.
 
-![OpenCode Web - جلسة نشطة](../../../assets/web/web-homepage-active-session.png)
+![OpenCode Web - جلسة نشطة](https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/web/assets/web/web-homepage-active-session.png)
 
 ### حالة الخادم
 
 انقر على "See Servers" لعرض الخوادم المتصلة وحالتها.
 
-![OpenCode Web - See Servers (عرض الخوادم)](../../../assets/web/web-homepage-see-servers.png)
+![OpenCode Web - See Servers (عرض الخوادم)](https://raw.githubusercontent.com/anomalyco/opencode/dev/packages/web/assets/web/web-homepage-see-servers.png)
 
 ---
 
