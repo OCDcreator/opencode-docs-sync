@@ -1,0 +1,89 @@
+---
+title: Windows (WSL)
+description: WSL を使って Windows で OpenCode を使う。
+---
+
+OpenCode は Windows で直接実行できますが、より快適に使うには [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) の利用をおすすめします。WSL は OpenCode の機能とスムーズに連携する Linux 環境を提供します。
+
+:::tip[WSL を使う理由]
+WSL を使うと、ファイルシステム性能、ターミナルサポート、OpenCode が依存する開発ツールとの互換性が向上します。
+:::
+
+---
+
+## セットアップ
+
+---
+
+## デスクトップアプリ + WSL サーバー
+
+OpenCode デスクトップアプリを使いつつ、サーバーは WSL で動かしたい場合は次の手順です。
+
+1. **WSL でサーバーを起動する**
+
+   外部接続を許可するため、`--hostname 0.0.0.0` を付けて起動します。
+
+   ```bash
+   opencode serve --hostname 0.0.0.0 --port 4096
+   ```
+
+2. **デスクトップアプリを接続する**
+
+   `http://localhost:4096` に接続します。
+
+> **Note**
+>
+> 環境によって `localhost` が使えない場合は、WSL 側で `hostname -I` を実行して IP アドレスを確認し、`http://<wsl-ip>:4096` に接続してください。
+
+> **Caution**
+>
+> `--hostname 0.0.0.0` を使う場合は、`OPENCODE_SERVER_PASSWORD` を設定してサーバーを保護してください。
+> 
+> ```bash
+> OPENCODE_SERVER_PASSWORD=your-password opencode serve --hostname 0.0.0.0
+> ```
+
+## Web クライアント + WSL
+
+Windows で Web 利用を快適にするには:
+
+1. **PowerShell ではなく WSL ターミナルで `opencode web` を実行する**
+
+   ```bash
+   opencode web --hostname 0.0.0.0
+   ```
+
+2. **Windows のブラウザからアクセスする**
+
+   `http://localhost:<port>` にアクセスします（URL は OpenCode が表示します）。
+
+WSL から `opencode web` を実行すると、適切なファイルシステムアクセスとターミナル統合を維持したまま、Windows ブラウザから利用できます。
+
+---
+
+## Windows ファイルへのアクセス
+
+WSL からは `/mnt/` ディレクトリ経由で Windows ファイルにアクセスできます。
+
+- `C:` drive → `/mnt/c/`
+- `D:` drive → `/mnt/d/`
+- そのほかのドライブも同様です
+
+例:
+
+```bash
+cd /mnt/c/Users/YourName/Documents/project
+opencode
+```
+
+> **Tip**
+>
+> よりスムーズに使うには、リポジトリを WSL のファイルシステム（例: `~/code/`）にクローンまたはコピーして、そこで OpenCode を実行することをおすすめします。
+
+---
+
+## ヒント
+
+- Windows ドライブ上のプロジェクトでも、OpenCode は WSL で実行するとファイルアクセスがスムーズです
+- OpenCode と一緒に VS Code の [WSL 拡張機能](https://code.visualstudio.com/docs/remote/wsl) を使うと統合的な開発フローを構築できます
+- OpenCode の設定とセッションは WSL 環境内の `~/.local/share/opencode/` に保存されます

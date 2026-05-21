@@ -1,0 +1,127 @@
+---
+title: "代理技能"
+description: "通过 SKILL.md 定义可复用的行为"
+---
+
+代理技能让 OpenCode 能够从你的仓库或主目录中发现可复用的指令。
+技能通过原生的 `skill` 工具按需加载——代理可以查看可用技能，并在需要时加载完整内容。
+
+---
+
+## 放置文件
+
+为每个技能名称创建一个文件夹，并在其中放入 `SKILL.md`。
+OpenCode 会搜索以下位置：
+
+- 项目配置：`.opencode/skills/
+    
+  </skill>
+</available_skills>
+```
+
+代理通过调用工具来加载技能：
+
+```
+skill({ name: "git-release" })
+```
+
+---
+
+## 配置权限
+
+在 `opencode.json` 中使用基于模式的权限来控制代理可以访问哪些技能：
+
+```json
+{
+  "permission": {
+    "skill": {
+      "*": "allow",
+      "pr-review": "allow",
+      "internal-*": "deny",
+      "experimental-*": "ask"
+    }
+  }
+}
+```
+
+| 权限    | 行为                     |
+| ------- | ------------------------ |
+| `allow` | 技能立即加载             |
+| `deny`  | 对代理隐藏技能，拒绝访问 |
+| `ask`   | 加载前提示用户确认       |
+
+模式支持通配符：`internal-*` 可匹配 `internal-docs`、`internal-tools` 等。
+
+---
+
+## 按代理覆盖权限
+
+为特定代理授予与全局默认值不同的权限。
+
+**自定义代理**（在代理 frontmatter 中）：
+
+```yaml
+---
+permission:
+  skill:
+    "documents-*": "allow"
+---
+```
+
+**内置代理**（在 `opencode.json` 中）：
+
+```json
+{
+  "agent": {
+    "plan": {
+      "permission": {
+        "skill": {
+          "internal-*": "allow"
+        }
+      }
+    }
+  }
+}
+```
+
+---
+
+## 禁用技能工具
+
+为不需要使用技能的代理完全禁用技能功能：
+
+**自定义代理**：
+
+```yaml
+---
+tools:
+  skill: false
+---
+```
+
+**内置代理**：
+
+```json
+{
+  "agent": {
+    "plan": {
+      "tools": {
+        "skill": false
+      }
+    }
+  }
+}
+```
+
+禁用后，`<available_skills>` 部分将被完全省略。
+
+---
+
+## 排查加载问题
+
+如果某个技能没有显示：
+
+1. 确认 `SKILL.md` 文件名全部为大写字母
+2. 检查 frontmatter 是否包含 `name` 和 `description`
+3. 确保技能名称在所有位置中唯一
+4. 检查权限设置——设为 `deny` 的技能会对代理隐藏

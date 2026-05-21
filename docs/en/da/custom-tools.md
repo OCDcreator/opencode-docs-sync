@@ -1,0 +1,189 @@
+---
+title: Brugerdefinerede værktøjer
+description: Opret værktøjer, som LLM kan kalde opencode ind.
+---
+
+Brugerdefinerede værktøjer er funktioner, du opretter, som LLM kan kalde under samtaler. De arbejder sammen med opencodes [built-in tools](/docs/tools) som `read`, `write` og `bash`.
+
+---
+
+## Oprettelse af et værktøj
+
+Værktøjer er defineret som **TypeScript**- eller **JavaScript**-filer. Værktøjsdefinitionen kan dog kalde scripts skrevet på **alle sprog** - TypeScript eller JavaScript bruges kun til selve værktøjsdefinitionen.
+
+---
+
+### Placering
+
+De kan definere:
+
+- Lokalt ved at placere dem i biblioteket `.opencode/tools/` i dit projekt.
+- Eller globalt ved at placere dem i `~/.config/opencode/tools/`.
+
+---
+
+### Struktur
+
+Den nemmeste måde at oprette værktøjer på er at bruge `tool()`-hjælperen, som giver typesikkerhed og validering.
+
+```ts title=".opencode/tools/database.ts" {1}
+
+export default tool({
+  description: "Query the project database",
+  args: {
+    query: tool.schema.string().describe("SQL query to execute"),
+  },
+  async execute(args) {
+    // Your database logic here
+    return `Executed query: ${args.query}`
+  },
+})
+```
+
+**filnavnet** bliver **værktøjsnavnet**. Ovenstående opretter et `database` værktøj.
+
+---
+
+#### Flere værktøjer pr. fil
+
+Du kan også eksportere flere værktøjer fra en enkelt fil. Hver eksport bliver **et separat værktøj** med navnet **`<filename>_<exportname>`**:
+
+```ts title=".opencode/tools/math.ts"
+
+export const add = tool({
+  description: "Add two numbers",
+  args: {
+    a: tool.schema.number().describe("First number"),
+    b: tool.schema.number().describe("Second number"),
+  },
+  async execute(args) {
+    return args.a + args.b
+  },
+})
+
+export const multiply = tool({
+  description: "Multiply two numbers",
+  args: {
+    a: tool.schema.number().describe("First number"),
+    b: tool.schema.number().describe("Second number"),
+  },
+  async execute(args) {
+    return args.a * args.b
+  },
+})
+```
+
+Dette skaber værktøjer: `math_add` og `math_multiply`.
+
+---
+
+#### Navnekollisioner med indbyggede værktøjer
+
+Brugerdefinerede værktøjer er identificeret ved værktøjsnavn. Hvis et brugerdefineret værktøj bruger samme navn som et indbygget værktøj, har det brugerdefinerede værktøj forrang.
+
+For eksempel erstatter denne fil det indbyggede `bash` værktøj:
+
+```ts title=".opencode/tools/bash.ts"
+
+export default tool({
+  description: "Restricted bash wrapper",
+  args: {
+    command: tool.schema.string(),
+  },
+  async execute(args) {
+    return `blocked: ${args.command}`
+  },
+})
+```
+
+> **Note**
+>
+> Foretræk unikke navne, medmindre du bevidst ønsker at erstatte et indbygget værktøj. Hvis du vil deaktivere et indbygget værktøj, men ikke overskrive det, skal du bruge [tilladelser](/docs/permissions).
+
+---
+
+### Argumenter
+
+Du kan bruge `tool.schema`, som kun er [Zod](https://zod.dev), til at definere argumenttyper.
+
+```ts "tool.schema"
+args: {
+  query: tool.schema.string().describe("SQL query to execute")
+}
+```
+
+Du kan også importere [Zod](https://zod.dev) direkte og returnere et almindeligt objekt:
+
+```ts {6}
+
+export default {
+  description: "Tool description",
+  args: {
+    param: z.string().describe("Parameter description"),
+  },
+  async execute(args, context) {
+    // Tool implementation
+    return "result"
+  },
+}
+```
+
+---
+
+### Kontekst
+
+Værktøjer modtager kontekst om den aktuelle session:
+
+```ts title=".opencode/tools/project.ts" {8}
+
+export default tool({
+  description: "Get project information",
+  args: {},
+  async execute(args, context) {
+    // Access context information
+    const { agent, sessionID, messageID, directory, worktree } = context
+    return `Agent: ${agent}, Session: ${sessionID}, Message: ${messageID}, Directory: ${directory}, Worktree: ${worktree}`
+  },
+})
+```
+
+Brug `context.directory` til sessionens arbejdsmappe.
+Brug `context.worktree` til git-arbejdstræets rod.
+
+---
+
+## Eksempler
+
+### Skriv et værktøj i Python
+
+Du kan skrive dine værktøjer på et hvilket som helst sprog, du ønsker. Her er et eksempel, der tilføjer til tal ved hjælp af Python.
+
+Først skal du oprette værktøjet som et Python-script:
+
+```python title=".opencode/tools/add.py"
+import sys
+
+a = int(sys.argv[1])
+b = int(sys.argv[2])
+print(a + b)
+```
+
+Opret derefter værktøjsdefinitionen, der kalder den:
+
+```ts title=".opencode/tools/python-add.ts" {10}
+
+export default tool({
+  description: "Add two numbers using Python",
+  args: {
+    a: tool.schema.number().describe("First number"),
+    b: tool.schema.number().describe("Second number"),
+  },
+  async execute(args, context) {
+    const script = path.join(context.worktree, ".opencode/tools/add.py")
+    const result = await Bun.$`python3 ${script} ${args.a} ${args.b}`.text()
+    return result.trim()
+  },
+})
+```
+
+Her bruger vi [`Bun.$`](https://bun.com/docs/runtime/shell)-værktøjet til at køre Python-scriptet.
