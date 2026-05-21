@@ -1,0 +1,64 @@
+name: Sync OpenCode Docs
+
+on:
+  # 每天 UTC 04:00（北京时间 12:00）自动同步
+  schedule:
+    - cron: "0 4 * * *"
+
+  # 支持手动触发
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "Upstream branch or tag to sync"
+        required: false
+        default: "dev"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout this repo
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Run sync script
+        run: bun run scripts/sync.ts
+        env:
+          SYNC_REF: ${{ github.event.inputs.ref || 'dev' }}
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet -- docs/; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Get upstream info
+        id: upstream
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          SHA=$(cat docs/.sync-meta.json | jq -r '.upstreamSha')
+          MSG=$(cat docs/.sync-meta.json | jq -r '.upstreamMsg')
+          DATE=$(cat docs/.sync-meta.json | jq -r '.lastSync')
+          echo "sha=${SHA:0:7}" >> $GITHUB_OUTPUT
+          echo "msg=${MSG}" >> $GITHUB_OUTPUT
+          echo "date=${DATE}" >> $GITHUB_OUTPUT
+
+      - name: Commit and push
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/
+          git commit -m "docs: sync from upstream ${{ steps.upstream.outputs.sha }} (${{ steps.upstream.outputs.date }})
+
+          Upstream: anomalyco/opencode@${{ steps.upstream.outputs.sha }}
+          Message: ${{ steps.upstream.outputs.msg }}"
+          git push
