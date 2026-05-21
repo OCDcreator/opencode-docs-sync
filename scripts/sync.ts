@@ -10,6 +10,16 @@ const DOCS_SOURCE_PATH =
 const TEMP_DIR = ".sync-temp"
 const OUTPUT_DIR = "docs"
 
+// Files to exclude (promotional / non-technical pages)
+const EXCLUDE_FILES = new Set([
+  "index",       // 安装引导 / 推销 Zen
+  "zen",         // OpenCode Zen 订阅推广
+  "go",          // Go 语言集成宣传
+  "enterprise",  // 企业版营销
+  "ecosystem",   // 生态合作推广
+  "share",       // 对话分享功能推广
+])
+
 // Languages to sync (directory name → output folder name)
 const LANGUAGES = [
   { source: "", output: "en" }, // root = English
@@ -78,6 +88,9 @@ function findDocFiles(dir: string): string[] {
       if (entry.isDirectory()) {
         walk(full)
       } else if (entry.isFile() && /\.mdx?$/.test(entry.name)) {
+        // Skip excluded files (by stem name, e.g. "zen" matches "zen.mdx")
+        const stem = entry.name.replace(/\.mdx?$/, "")
+        if (EXCLUDE_FILES.has(stem)) continue
         files.push(relative(dir, full))
       }
     }
