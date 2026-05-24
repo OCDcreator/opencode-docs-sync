@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-05-23T06:39:15.675Z",
+  "lastSync": "2026-05-24T07:26:22.278Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "7d2c1ce6c6ad0a4d8f1cab7397d573bc082a1c8f",
-  "upstreamMsg": "chore: generate"
+  "upstreamSha": "0cf99cf5f961eba7ae74f94ba5475f807393840a",
+  "upstreamMsg": "chore: update nix node_modules hashes"
 }
