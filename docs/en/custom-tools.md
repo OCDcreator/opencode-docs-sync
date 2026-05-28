@@ -57,7 +57,7 @@ export const add = tool({
     b: tool.schema.number().describe("Second number"),
   },
   async execute(args) {
-    return args.a + args.b
+    return (args.a + args.b).toString()
   },
 })
 
@@ -68,7 +68,7 @@ export const multiply = tool({
     b: tool.schema.number().describe("Second number"),
   },
   async execute(args) {
-    return args.a * args.b
+    return (args.a * args.b).toString()
   },
 })
 ```
