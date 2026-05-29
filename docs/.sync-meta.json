@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-05-28T08:06:36.444Z",
+  "lastSync": "2026-05-29T08:03:08.753Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "14e0b9b17f886c9157c92e1b98caca5a40d21797",
-  "upstreamMsg": "fix(openai): retry websocket stream failures (#29673)"
+  "upstreamSha": "c7e1fc5e4260fc3e1aea24e26d67ed4074e3575d",
+  "upstreamMsg": "fix(opencode): retry stalled SSE streams (#29837)"
 }
