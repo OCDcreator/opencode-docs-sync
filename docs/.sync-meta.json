@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-06-01T09:31:55.524Z",
+  "lastSync": "2026-06-02T08:41:40.690Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "68676f2c5c993ae90b5a2c50dd2cd724da47253c",
-  "upstreamMsg": "chore: generate"
+  "upstreamSha": "d5a0ddb520429d09edb3fe9d5dde9866f8f7a8fe",
+  "upstreamMsg": "fix(app): tab title truncation and close button positioning (#30349)"
 }
