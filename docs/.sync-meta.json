@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-06-18T08:50:40.984Z",
+  "lastSync": "2026-06-19T09:08:11.113Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "8716c4309a209d50f0b17211e407e317a28cdce3",
-  "upstreamMsg": "sync release versions for v1.17.8"
+  "upstreamSha": "355a0bcf5bb5e6c7baa271a4b2439a40f286e55d",
+  "upstreamMsg": "chore: generate"
 }
