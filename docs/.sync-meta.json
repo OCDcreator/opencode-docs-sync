@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-06-24T07:49:15.504Z",
+  "lastSync": "2026-06-25T07:50:48.668Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "a4551a94b40bcafef7d5028ca88efd56fd0007d5",
-  "upstreamMsg": "fix(app): make session navigation stable and fast (#33569)"
+  "upstreamSha": "b44af11e030276a879223d4ed6d8ee1e822c0bab",
+  "upstreamMsg": "fix(app): restore tab layout consistency (#33804)"
 }
