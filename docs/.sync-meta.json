@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-06-25T07:50:48.668Z",
+  "lastSync": "2026-06-26T07:57:59.214Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "b44af11e030276a879223d4ed6d8ee1e822c0bab",
-  "upstreamMsg": "fix(app): restore tab layout consistency (#33804)"
+  "upstreamSha": "219ba24d90aa86e302b943a8af1005bee7b7e85a",
+  "upstreamMsg": "chore: update nix node_modules hashes"
 }
