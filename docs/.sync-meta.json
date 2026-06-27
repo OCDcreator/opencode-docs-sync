@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-06-26T07:57:59.214Z",
+  "lastSync": "2026-06-27T07:21:50.266Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "219ba24d90aa86e302b943a8af1005bee7b7e85a",
-  "upstreamMsg": "chore: update nix node_modules hashes"
+  "upstreamSha": "bdfea046db27c4249dd3181eb369b1530d7b3fe0",
+  "upstreamMsg": "fix(desktop): recognize normal auth metadata input prompts in connect provider dialog (#33024)"
 }
