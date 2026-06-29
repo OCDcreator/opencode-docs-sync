@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-06-28T07:54:35.313Z",
+  "lastSync": "2026-06-29T09:03:06.747Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "dfeb1b5051a05b359bd4af711b204d2c0342c5f4",
-  "upstreamMsg": "feat(client): generate complete protocol client (#34164)"
+  "upstreamSha": "beaaa174ea9c77984eec91d73f20dc161028bd8f",
+  "upstreamMsg": "fix(app): disable empty server chevron (#34292)"
 }
