@@ -35,6 +35,7 @@ opencode [project]
 |       |       | Prompt to use                                                           |
 |        | `-m`  | Model to use in the form of provider/model                              |
 |        |       | Agent to use                                                            |
+|         |       | Auto-approve permissions that are not explicitly denied                 |
 |         |       | Port to listen on                                                       |
 |     |       | Hostname to listen on                                                   |
 |         |       | Enable mDNS discovery                                                   |
@@ -359,26 +360,26 @@ opencode run --attach http://localhost:4096 "Explain async/await in JavaScript"
 
 #### Flags
 
-| Flag                                                         | Short | Description                                                                |
-| ------------------------------------------------------------ | ----- | -------------------------------------------------------------------------- |
-|                       |       | The command to run, use message for args                                   |
-|                      | `-c`  | Continue the last session                                                  |
-|                       | `-s`  | Session ID to continue                                                     |
-|                          |       | Fork the session when continuing (use with `--continue` or `--session`)    |
-|                         |       | Share the session                                                          |
-|                         | `-m`  | Model to use in the form of provider/model                                 |
-|                         |       | Agent to use                                                               |
-|                          | `-f`  | File(s) to attach to message                                               |
-|                        |       | Format: default (formatted) or json (raw JSON events)                      |
-|                         |       | Title for the session (uses truncated prompt if no value provided)         |
-|                        |       | Attach to a running opencode server (e.g., http://localhost:4096)          |
-|                      | `-p`  | Basic auth password (defaults to `OPENCODE_SERVER_PASSWORD`)               |
-|                      | `-u`  | Basic auth username (defaults to `OPENCODE_SERVER_USERNAME` or `opencode`) |
-|                           |       | Directory to run in, or path on the remote server when attaching           |
-|                          |       | Port for the local server (defaults to random port)                        |
-|                       |       | Model variant (provider-specific reasoning effort)                         |
-|                      |       | Show thinking blocks                                                       |
-|  |       | Auto-approve permissions that are not explicitly denied (dangerous!)       |
+| Flag                                     | Short | Description                                                                |
+| ---------------------------------------- | ----- | -------------------------------------------------------------------------- |
+|   |       | The command to run, use message for args                                   |
+|  | `-c`  | Continue the last session                                                  |
+|   | `-s`  | Session ID to continue                                                     |
+|      |       | Fork the session when continuing (use with `--continue` or `--session`)    |
+|     |       | Share the session                                                          |
+|     | `-m`  | Model to use in the form of provider/model                                 |
+|     |       | Agent to use                                                               |
+|      | `-f`  | File(s) to attach to message                                               |
+|    |       | Format: default (formatted) or json (raw JSON events)                      |
+|     |       | Title for the session (uses truncated prompt if no value provided)         |
+|    |       | Attach to a running opencode server (e.g., http://localhost:4096)          |
+|  | `-p`  | Basic auth password (defaults to `OPENCODE_SERVER_PASSWORD`)               |
+|  | `-u`  | Basic auth username (defaults to `OPENCODE_SERVER_USERNAME` or `opencode`) |
+|       |       | Directory to run in, or path on the remote server when attaching           |
+|      |       | Port for the local server (defaults to random port)                        |
+|   |       | Model variant (provider-specific reasoning effort)                         |
+|  |       | Show thinking blocks                                                       |
+|      |       | Auto-approve permissions that are not explicitly denied                    |
 
 ---
 
