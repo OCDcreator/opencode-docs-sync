@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-07-01T08:17:18.934Z",
+  "lastSync": "2026-07-02T07:37:12.012Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "cd00422298ec34d8aac218ff3bb3148129c757f0",
-  "upstreamMsg": "fix(app): question UI fixes and UX improvements (#34116)"
+  "upstreamSha": "fbb95a6ee3be69bc1011b5d94459937d8f847b40",
+  "upstreamMsg": "fix(app): seed session status before warming session info (#34864)"
 }
