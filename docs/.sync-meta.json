@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-07-05T07:33:00.612Z",
+  "lastSync": "2026-07-06T08:26:26.128Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "b7e4f1ef7433f83ba009eefa2997aeb81017f6ed",
-  "upstreamMsg": "fix: update Feishu community link (#35392)"
+  "upstreamSha": "977a40af686ced65d14e86d52ca41c9137b7e515",
+  "upstreamMsg": "chore: generate"
 }
