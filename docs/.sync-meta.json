@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-07-09T07:43:35.350Z",
+  "lastSync": "2026-07-10T07:42:12.933Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "ae7d63272cd7d36dffcf3e2745cd2be8aea14f3b",
-  "upstreamMsg": "feat(app): fix descender clipping (#35950)"
+  "upstreamSha": "d0ba5389248e05546849b9f69b7bc417aa5fd5d7",
+  "upstreamMsg": "zen: track openai cache_write_tokens"
 }
