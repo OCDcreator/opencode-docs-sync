@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-07-12T06:39:52.441Z",
+  "lastSync": "2026-07-13T07:27:53.849Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "34e58090595d44e3e7cc37498f16753a98627456",
-  "upstreamMsg": "feat(tui): show idle session directory (#36457)"
+  "upstreamSha": "a8062ea314fb760723c551d786f5bfcd45ed733f",
+  "upstreamMsg": "fix(provider): derive variants from reasoning metadata (#36624)"
 }
