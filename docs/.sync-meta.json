@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-07-13T07:27:53.849Z",
+  "lastSync": "2026-07-14T06:17:09.602Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "a8062ea314fb760723c551d786f5bfcd45ed733f",
-  "upstreamMsg": "fix(provider): derive variants from reasoning metadata (#36624)"
+  "upstreamSha": "cb8be9ba1217c2e7a2b93cf513eb21b41a7f5365",
+  "upstreamMsg": "chore: generate"
 }
