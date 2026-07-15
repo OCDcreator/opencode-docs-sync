@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-07-14T06:17:09.602Z",
+  "lastSync": "2026-07-15T06:20:54.892Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "cb8be9ba1217c2e7a2b93cf513eb21b41a7f5365",
-  "upstreamMsg": "chore: generate"
+  "upstreamSha": "05c3e40a4e641732b991499000ca479e5dad4b02",
+  "upstreamMsg": "fix(app): tolerate null session archive times (#36999)"
 }
