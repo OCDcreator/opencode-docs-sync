@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-07-15T06:20:54.892Z",
+  "lastSync": "2026-07-16T06:24:54.650Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "05c3e40a4e641732b991499000ca479e5dad4b02",
-  "upstreamMsg": "fix(app): tolerate null session archive times (#36999)"
+  "upstreamSha": "17544802c38a4d35834275526ccf38be1cdcfbf4",
+  "upstreamMsg": "fix(app): remove inactive help button (#37217)"
 }
