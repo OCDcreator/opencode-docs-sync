@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-07-18T06:09:54.370Z",
+  "lastSync": "2026-07-19T06:35:34.249Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "901c9e732921891e1fd71eb735ef5e78013f582f",
-  "upstreamMsg": "fix(app): disable unavailable file navigation (#37595)"
+  "upstreamSha": "573ac859838635d28e7dae73a9d06cfe7548757c",
+  "upstreamMsg": "feat(desktop): align new session project picker (#37461)"
 }
