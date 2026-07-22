@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-07-21T06:34:35.430Z",
+  "lastSync": "2026-07-22T06:34:59.315Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "849c2598abc7d2b40261e74b5826bc74ffc78308",
-  "upstreamMsg": "docs: generalize session title model description (#37986)"
+  "upstreamSha": "0a601cf334b9a83cc2854108a2b860f25e6e7e8e",
+  "upstreamMsg": "fix(docs): correct Kimi K2.7 Code request limits (#38248)"
 }
