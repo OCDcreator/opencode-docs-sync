@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-07-22T06:34:59.315Z",
+  "lastSync": "2026-07-23T06:34:35.669Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "0a601cf334b9a83cc2854108a2b860f25e6e7e8e",
-  "upstreamMsg": "fix(docs): correct Kimi K2.7 Code request limits (#38248)"
+  "upstreamSha": "92cede0541305a99579b0575b79297089d37e6da",
+  "upstreamMsg": "chore: update nix node_modules hashes"
 }
