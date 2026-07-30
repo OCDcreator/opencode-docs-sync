@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-07-29T06:37:02.591Z",
+  "lastSync": "2026-07-30T06:32:50.134Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "e8b09927889ba4b5b7fc74bbab5b864d205406ca",
-  "upstreamMsg": "fix(app): defer model variant selector (#39445)"
+  "upstreamSha": "f7204902192624481e526b1852cdedaadb914e24",
+  "upstreamMsg": "fix(console): add public fetch compatibility flag"
 }
