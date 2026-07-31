@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-07-30T06:32:50.134Z",
+  "lastSync": "2026-07-31T06:49:32.595Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "f7204902192624481e526b1852cdedaadb914e24",
-  "upstreamMsg": "fix(console): add public fetch compatibility flag"
+  "upstreamSha": "da59457ca4ff55aca0147d4ddb33c495dc72be31",
+  "upstreamMsg": "feat(go): add GPT 5.6 Luna content (#39812)"
 }
