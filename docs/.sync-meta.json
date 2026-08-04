@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-08-03T07:35:08.867Z",
+  "lastSync": "2026-08-04T06:32:48.309Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "3016830e253492ef41b6cc00dbed623e5989279b",
-  "upstreamMsg": "fix(app): search every known project in the open project dialog (#40202)"
+  "upstreamSha": "6c3299103ce1494b4b37f5727199ac9539130534",
+  "upstreamMsg": "feat(app): add minimal RTL support (#40372)"
 }
