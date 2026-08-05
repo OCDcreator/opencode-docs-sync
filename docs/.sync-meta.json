@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-08-04T06:32:48.309Z",
+  "lastSync": "2026-08-05T06:33:32.321Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "6c3299103ce1494b4b37f5727199ac9539130534",
-  "upstreamMsg": "feat(app): add minimal RTL support (#40372)"
+  "upstreamSha": "2f17fc9613771af3de3b5a2715b836037d80c4b1",
+  "upstreamMsg": "docs(zen): add LongCat free model (#40585)"
 }
