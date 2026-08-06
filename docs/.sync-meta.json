@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-08-05T06:33:32.321Z",
+  "lastSync": "2026-08-06T06:36:22.373Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "2f17fc9613771af3de3b5a2715b836037d80c4b1",
-  "upstreamMsg": "docs(zen): add LongCat free model (#40585)"
+  "upstreamSha": "b8bd88901a4870ef3a5752840f4e23e11d54e24e",
+  "upstreamMsg": "chore: generate"
 }
