@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-08-06T06:36:22.373Z",
+  "lastSync": "2026-08-07T05:44:53.860Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "b8bd88901a4870ef3a5752840f4e23e11d54e24e",
-  "upstreamMsg": "chore: generate"
+  "upstreamSha": "741244b69d5c267342aef04cebff804eb615bfa6",
+  "upstreamMsg": "feat(app): add global locale coverage (#40992)"
 }
