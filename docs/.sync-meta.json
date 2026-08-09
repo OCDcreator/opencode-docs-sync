@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-08-08T05:03:36.366Z",
+  "lastSync": "2026-08-09T05:11:06.330Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "fe82a1b6ca4f535beb973b0867017e3f639f85ed",
-  "upstreamMsg": "chore: generate"
+  "upstreamSha": "38e10eb1408feb700021b8e8766fb0ab41bf84e2",
+  "upstreamMsg": "fix(opencode): ignore unknown config fields (#41312)"
 }
