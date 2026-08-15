@@ -258,7 +258,7 @@ Search the web for information.
 
 > **Note**
 >
-> This tool is only available when using the OpenCode provider or when the `OPENCODE_ENABLE_EXA` environment variable is set to any truthy value (e.g., `true` or `1`).
+> This tool is only available when using the OpenCode or OpenCode Go provider, or when the `OPENCODE_ENABLE_EXA` environment variable is set to any truthy value (e.g., `true` or `1`).
 > 
 > To enable when launching OpenCode:
 > 
