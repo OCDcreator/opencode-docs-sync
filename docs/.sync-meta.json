@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-08-17T04:50:08.341Z",
+  "lastSync": "2026-08-18T04:41:14.015Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "1c965451b537e1af4bff12c163200f762a6a0364",
-  "upstreamMsg": "fix(stats): correct YouTube footer link (#42941)"
+  "upstreamSha": "32320409b17c4dff6af14b300a9e7ef3ba6ba76b",
+  "upstreamMsg": "fix(app): keep server details editable (#43169)"
 }
