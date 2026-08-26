@@ -258,12 +258,14 @@ Search the web for information.
 
 > **Note**
 >
-> This tool is only available when using the OpenCode or OpenCode Go provider, or when the `OPENCODE_ENABLE_EXA` environment variable is set to any truthy value (e.g., `true` or `1`).
+> This tool is only available when using the OpenCode or OpenCode Go provider, or when either the `OPENCODE_ENABLE_EXA` or `OPENCODE_ENABLE_PARALLEL` environment variable is set to any truthy value (e.g., `true` or `1`).
 > 
 > To enable when launching OpenCode:
 > 
 > ```bash
 > OPENCODE_ENABLE_EXA=1 opencode
+> # or
+> OPENCODE_ENABLE_PARALLEL=1 opencode
 > ```
 
 ```json title="opencode.json" {4}
@@ -275,9 +277,9 @@ Search the web for information.
 }
 ```
 
-Performs web searches using Exa AI to find relevant information online. Useful for researching topics, finding current events, or gathering information beyond the training data cutoff.
+Performs web searches using Exa or Parallel to find relevant information online. Useful for researching topics, finding current events, or gathering information beyond the training data cutoff.
 
-No API key is required — the tool connects directly to Exa AI's hosted MCP service without authentication.
+No API key is required — the tool connects directly to the backend's hosted MCP service without authentication.
 
 > **Tip**
 >
