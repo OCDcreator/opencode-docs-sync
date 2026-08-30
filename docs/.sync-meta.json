@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-08-29T10:57:33.211Z",
+  "lastSync": "2026-08-30T09:51:47.738Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "dc4449df0d52199704ea4989a5a993ebbc605612",
-  "upstreamMsg": "chore: update nix node_modules hashes"
+  "upstreamSha": "10765ff2a9da8c3b88e4de873aa383a49c318912",
+  "upstreamMsg": "fix: remove Hy3 Free docs and correct Go chart rendering (#46221)"
 }
