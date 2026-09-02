@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-09-01T09:18:32.154Z",
+  "lastSync": "2026-09-02T08:40:12.690Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "ebece6efd7b11401cf1e7390b5a22991b6608cc4",
-  "upstreamMsg": "docs(web): update Qwen3.7 Max Go usage (#46555)"
+  "upstreamSha": "69c172e8a7c0086887b1f93ed5a162f14b6aa0c5",
+  "upstreamMsg": "fix(provider): handle SSE reader cancel rejections (#44944)"
 }
