@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-09-04T08:44:28.805Z",
+  "lastSync": "2026-09-05T08:15:13.206Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "70f74112e3f4a33ea1af8209c979a5060d7d2a36",
-  "upstreamMsg": "fix(stats): keep omen-alpha under unknown provider (#47248)"
+  "upstreamSha": "e2894562f8ba943d72172d10b727c24d5f650c16",
+  "upstreamMsg": "fix(console): openai usage normalization and tier threshold config (#47342)"
 }
