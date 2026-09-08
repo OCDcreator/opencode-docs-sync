@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-09-07T09:11:56.954Z",
+  "lastSync": "2026-09-08T08:46:12.734Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "57ef3828431790c53f8f333c7ffbfe88770a1812",
-  "upstreamMsg": "feat(console): publish oauth client metadata document (#47737)"
+  "upstreamSha": "d6855b6b47a8433462ac6aeeba882ccf734cb7f1",
+  "upstreamMsg": "chore: generate"
 }
