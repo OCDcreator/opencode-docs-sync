@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-09-10T08:51:28.058Z",
+  "lastSync": "2026-09-11T08:48:44.583Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "859106eb17d5b840475f5e4b78e64c9622f8750e",
-  "upstreamMsg": "docs(go): remove Omen Alpha listings (#48280)"
+  "upstreamSha": "193de13a88d62a6409c6d385831180f1def527dc",
+  "upstreamMsg": "fix(stats): normalize deepseek v4.1 flash"
 }
