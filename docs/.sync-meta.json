@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-09-19T08:42:23.938Z",
+  "lastSync": "2026-09-20T09:11:45.408Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "9a53565790ddf7d2fba1fb870c1be727deb8c6a9",
-  "upstreamMsg": "chore: generate"
+  "upstreamSha": "ebb7b76eca82342642c78645109e865614533827",
+  "upstreamMsg": "docs(web): align Jev section heading"
 }
