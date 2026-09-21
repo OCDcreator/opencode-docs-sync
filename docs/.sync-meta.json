@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-09-20T09:11:45.408Z",
+  "lastSync": "2026-09-21T09:48:25.277Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "ebb7b76eca82342642c78645109e865614533827",
-  "upstreamMsg": "docs(web): align Jev section heading"
+  "upstreamSha": "70a24697ea0028e19f22712fd63059538cb4bee7",
+  "upstreamMsg": "fix(console): authenticate inference proxy"
 }
