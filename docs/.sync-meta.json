@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-09-21T09:48:25.277Z",
+  "lastSync": "2026-09-22T09:12:17.507Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "70a24697ea0028e19f22712fd63059538cb4bee7",
-  "upstreamMsg": "fix(console): authenticate inference proxy"
+  "upstreamSha": "fe3f3a41f79ad292cc3c7c629567385a20ec5130",
+  "upstreamMsg": "sync release versions for v1.18.32"
 }
