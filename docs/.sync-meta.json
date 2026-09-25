@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-09-24T09:11:09.170Z",
+  "lastSync": "2026-09-25T09:30:31.191Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "0f549842ee746e400b1f72516b0b2e292e267e2c",
-  "upstreamMsg": "fix(stats): attribute Hy4 preview traffic to Tencent (#51050)"
+  "upstreamSha": "16c56fe5ecc3305028d1f0a9cff5806e51c9d480",
+  "upstreamMsg": "fix(ci): use GPT-6 Luna for issue automation (#51261)"
 }
