@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-09-27T09:55:23.524Z",
+  "lastSync": "2026-09-28T10:45:02.446Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "b471c2b4495747353af768fbf2e0790c9d820ce2",
-  "upstreamMsg": "fix(opencode): catch completed MCP browser launcher failures (#51538)"
+  "upstreamSha": "725e4ba4b894e1be10cedfeece5e95131b88ac6b",
+  "upstreamMsg": "feat(go): show Go Plus plans and limits (#51822)"
 }
