@@ -185,10 +185,6 @@ Plugins können Ereignisse abonnieren, wie unten im Abschnitt „Beispiele“ ge
 - `session.status`
 - `session.updated`
 
-#### Todo-Ereignisse
-
-- `todo.updated`
-
 #### Shell-Ereignisse
 
 - `shell.env`

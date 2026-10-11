@@ -240,7 +240,6 @@ const agents = await client.app.agents()
 | الطريقة             | الوصف              | الاستجابة                                     |
 | ------------------- | ------------------ | --------------------------------------------- |
 | `project.list()`    | سرد جميع المشاريع  | <a href={typesUrl}><code>Project[]</code></a> |
-| `project.current()` | جلب المشروع الحالي | <a href={typesUrl}><code>Project</code></a>   |
 
 ---
 
@@ -250,8 +249,6 @@ const agents = await client.app.agents()
 // List all projects
 const projects = await client.project.list()
 
-// Get current project
-const currentProject = await client.project.current()
 ```
 
 ---

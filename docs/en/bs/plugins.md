@@ -179,10 +179,6 @@ Dodaci se mogu pretplatiti na događaje kao što je prikazano ispod u odjeljku P
 - `session.status`
 - `session.updated`
 
-#### Todo događaji
-
-- `todo.updated`
-
 #### Shell događaji
 
 - `shell.env`

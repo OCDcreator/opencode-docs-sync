@@ -1088,21 +1088,16 @@ export GITLAB_TOKEN=glpat-...
 > 
 > ##### OAuth for Self-Hosted instances
 > 
-> In order to make Oauth working for your self-hosted instance, you need to create
-> a new application (Settings → Applications) with the
-> callback URL `http://127.0.0.1:8080/callback` and following scopes:
+> OpenCode's bundled GitLab OAuth application only exists on gitlab.com. To use
+> OAuth with a self-hosted instance, create your own application (Settings →
+> Applications) with the callback URL `http://127.0.0.1:8080/callback`, the
+> `api` scope, and **Confidential** unchecked (PKCE requires a public client).
 > 
-> - api (Access the API on your behalf)
-> - read_user (Read your personal information)
-> - read_repository (Allows read-only access to the repository)
-> 
-> Then expose application ID as environment variable:
+> Then expose the application ID as an environment variable:
 > 
 > ```bash
 > export GITLAB_OAUTH_CLIENT_ID=your_application_id_here
 > ```
-> 
-> More documentation on [opencode-gitlab-auth](https://www.npmjs.com/package/opencode-gitlab-auth) homepage.
 > 
 > ##### Configuration
 > 
@@ -1135,26 +1130,32 @@ export GITLAB_TOKEN=glpat-...
 > Available DAP workflow models follow the `duo-workflow-*` naming convention and
 > are dynamically discovered from your GitLab instance.
 > 
-> ##### GitLab API Tools (Optional, but highly recommended)
-> 
-> To access GitLab tools (merge requests, issues, pipelines, CI/CD, etc.):
-> 
-> ```json title="opencode.json"
-> {
->   "$schema": "https://opencode.ai/config.json",
->   "plugin": ["opencode-gitlab-plugin"]
-> }
-> ```
-> 
-> This plugin provides comprehensive GitLab repository management capabilities including MR reviews, issue tracking, pipeline monitoring, and more.
-> 
-> ---
-> 
-> ### GitHub Copilot
-> 
-> To use your GitHub Copilot subscription with opencode:
-> 
 > :::note
+> Workflow model discovery only runs for a login stored with `/connect` (OAuth or
+> a personal access token). A `GITLAB_TOKEN` environment variable on its own does
+> not trigger discovery.
+
+##### GitLab API Tools (Optional, but highly recommended)
+
+To access GitLab tools (merge requests, issues, pipelines, CI/CD, etc.):
+
+```json title="opencode.json"
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugin": ["opencode-gitlab-plugin"]
+}
+```
+
+This plugin provides comprehensive GitLab repository management capabilities including MR reviews, issue tracking, pipeline monitoring, and more.
+
+---
+
+### GitHub Copilot
+
+To use your GitHub Copilot subscription with opencode:
+
+> **Note**
+>
 > Some models might need a [Pro+
 > subscription](https://github.com/features/copilot/plans) to use.
 

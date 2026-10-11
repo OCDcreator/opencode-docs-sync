@@ -185,10 +185,6 @@ Les plugins peuvent s'abonner à des événements comme indiqué ci-dessous dans
 - `session.status`
 - `session.updated`
 
-#### Événements à faire
-
-- `todo.updated`
-
 #### Événements Shell
 
 - `shell.env`

@@ -210,27 +210,6 @@ OpenCode で利用可能なすべての組み込みツールを次に示しま�
 
 ---
 
-### todowrite
-
-コーディングセッション中に ToDo リストを管理します。
-
-```json title="opencode.json" {4}
-{
-  "$schema": "https://opencode.ai/config.json",
-  "permission": {
-    "todowrite": "allow"
-  }
-}
-```
-
-タスクリストを作成および更新して、複雑な操作中の進行状況を追跡します。 LLM はこれを使用して、複数ステップのタスクを整理します。
-
-> **Note**
->
-> このツールはデフォルトではサブエージェントに対して無効になっていますが、手動で有効にすることができます。 [詳細はこちら](/docs/agents/#permissions)
-
----
-
 ### webfetch
 
 Web コンテンツを取得します。

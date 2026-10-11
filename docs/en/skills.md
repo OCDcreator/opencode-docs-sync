@@ -25,6 +25,9 @@ The agent loads a skill by calling the tool:
 skill({ name: "git-release" })
 ```
 
+Skills with `metadata["opencode/autoinvoke"]` set to `"false"` are not included in `<available_skills>`.
+They can still be selected manually and loaded by exact name.
+
 ---
 
 ## Configure permissions
@@ -125,3 +128,4 @@ If a skill does not show up:
 2. Check that frontmatter includes `name` and `description`
 3. Ensure skill names are unique across all locations
 4. Check permissions—skills with `deny` are hidden from agents
+5. Check `metadata["opencode/autoinvoke"]`—skills set to `"false"` are hidden from model-facing guidance

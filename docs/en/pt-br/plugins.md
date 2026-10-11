@@ -185,10 +185,6 @@ Plugins podem se inscrever em eventos como visto abaixo na seção Exemplos. Aqu
 - `session.status`
 - `session.updated`
 
-#### Eventos de Todo
-
-- `todo.updated`
-
 #### Eventos de Shell
 
 - `shell.env`

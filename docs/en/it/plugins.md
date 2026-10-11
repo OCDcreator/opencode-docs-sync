@@ -185,10 +185,6 @@ I plugin possono sottoscrivere eventi come mostrato sotto nella sezione Esempi. 
 - `session.status`
 - `session.updated`
 
-#### Eventi della todo
-
-- `todo.updated`
-
 #### Eventi della shell
 
 - `shell.env`

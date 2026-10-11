@@ -72,13 +72,13 @@ This command will guide you through creating a new agent with a custom system pr
 
 #### Flags
 
-| Flag                                        | Short | Description                                                                                                                                                                                                                |
-| ------------------------------------------- | ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|         |       | Directory to write the agent file to (defaults to global or `.opencode/agent` based on the prompt)                                                                                                                         |
-|  |       | What the agent should do                                                                                                                                                                                                   |
-|         |       | Agent mode: `all`, `primary`, or `subagent`                                                                                                                                                                                |
-|  |       | Comma-separated list of permissions to allow (default: all). Available: `bash`, `read`, `edit`, `glob`, `grep`, `webfetch`, `task`, `todowrite`, `websearch`, `lsp`, `skill`. Anything omitted is denied. Alias: `--tools` |
-|        | `-m`  | Model to use, in `provider/model` format                                                                                                                                                                                   |
+| Flag                                        | Short | Description                                                                                                                                                                                                   |
+| ------------------------------------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|         |       | Directory to write the agent file to (defaults to global or `.opencode/agent` based on the prompt)                                                                                                            |
+|  |       | What the agent should do                                                                                                                                                                                      |
+|         |       | Agent mode: `all`, `primary`, or `subagent`                                                                                                                                                                   |
+|  |       | Comma-separated list of permissions to allow (default: all). Available: `bash`, `read`, `edit`, `glob`, `grep`, `webfetch`, `task`, `websearch`, `lsp`, `skill`. Anything omitted is denied. Alias: `--tools` |
+|        | `-m`  | Model to use, in `provider/model` format                                                                                                                                                                      |
 
 Passing all of `--path`, `--description`, `--mode`, and `--permissions` runs the command non-interactively.
 
@@ -724,7 +724,6 @@ These environment variables enable experimental features that may change or be r
 | `OPENCODE_EXPERIMENTAL_EXA`                     | boolean | Enable experimental Exa features        |
 | `OPENCODE_EXPERIMENTAL_LSP_TY`                  | boolean | Enable TY LSP for python files          |
 | `OPENCODE_EXPERIMENTAL_PLAN_MODE`               | boolean | Enable plan mode                        |
-| `OPENCODE_EXPERIMENTAL_BACKGROUND_SUBAGENTS`    | boolean | Enable background subagent tasks        |
 | `OPENCODE_EXPERIMENTAL_EVENT_SYSTEM`            | boolean | Enable experimental event system        |
 | `OPENCODE_EXPERIMENTAL_NATIVE_LLM`              | boolean | Enable native LLM request path          |
 | `OPENCODE_EXPERIMENTAL_PARALLEL`                | boolean | Enable parallel web search execution    |

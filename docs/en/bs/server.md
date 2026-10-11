@@ -150,7 +150,6 @@ opencode server izlaže sljedece API-je.
 | `DELETE` | `/session/:id`                           | Obriši sesiju i sve njene podatke           | Returns `boolean`                                                                  |
 | `PATCH`  | `/session/:id`                           | Ažuriraj svojstva sesije                    | body: `{ title? }`, returns <a href={typesUrl}><code>Session</code></a>            |
 | `GET`    | `/session/:id/children`                  | Dohvati pod-sesije sesije                   | Returns <a href={typesUrl}><code>Session[]</code></a>                              |
-| `GET`    | `/session/:id/todo`                      | Dohvati listu zadataka za sesiju            | Returns <a href={typesUrl}><code>Todo[]</code></a>                                 |
 | `POST`   | `/session/:id/init`                      | Analiziraj aplikaciju i kreiraj `AGENTS.md` | body: `{ messageID, providerID, modelID }`, returns `boolean`                      |
 | `POST`   | `/session/:id/fork`                      | Granaj postojeću sesiju na poruci           | body: `{ messageID? }`, returns <a href={typesUrl}><code>Session</code></a>        |
 | `POST`   | `/session/:id/abort`                     | Prekini sesiju u toku                       | Returns `boolean`                                                                  |

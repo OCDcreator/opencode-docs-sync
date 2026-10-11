@@ -185,10 +185,6 @@ Eklentiler aşağıdaki Örnekler bölümünde görüldüğü gibi etkinliklere 
 - `session.status`
 - `session.updated`
 
-#### Yapılacaklar Olayları
-
-- `todo.updated`
-
 #### Kabuk Olayları
 
 - `shell.env`
