@@ -50,7 +50,7 @@ Možete prilagoditi osnovni URL za bilo kojeg provajdera postavljanjem opcije `b
 ## OpenCode Zen
 
 OpenCode Zen je lista modela koje je obezbedio OpenCode tim koji su bili
-testirano i potvrđeno da dobro radi sa OpenCode. [Saznajte više](/docs/zen).
+testirano i potvrđeno da dobro radi sa OpenCode. [Saznajte više](https://opencode.ai/v2/docs/console/).
 
 > **Tip**
 >
@@ -1402,7 +1402,7 @@ Ako već imate API ključ, možete odabrati **Ručno unesite API ključ** i zali
 
 ### OpenCode Zen
 
-OpenCode Zen je lista testiranih i verifikovanih modela koju je obezbedio OpenCode tim. [Saznajte više](/docs/zen).
+OpenCode Zen je lista testiranih i verifikovanih modela koju je obezbedio OpenCode tim. [Saznajte više](https://opencode.ai/v2/docs/console/).
 
 1. Prijavite se na **<a href={console}>OpenCode Zen</a>** i kliknite na **Kreiraj API ključ**.
 

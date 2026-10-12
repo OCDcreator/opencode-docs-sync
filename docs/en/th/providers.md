@@ -50,7 +50,7 @@ OpenCode ใช้ [AI SDK](https://ai-sdk.dev/) และ [Models.dev](https://
 ## OpenCode Zen
 
 OpenCode Zen คือรายชื่อโมเดลที่จัดทำโดยทีมงาน OpenCode ที่ได้รับ
-ทดสอบและตรวจสอบแล้วว่าทำงานได้ดีกับ OpenCode [เรียนรู้เพิ่มเติม](/docs/zen)
+ทดสอบและตรวจสอบแล้วว่าทำงานได้ดีกับ OpenCode [เรียนรู้เพิ่มเติม](https://opencode.ai/v2/docs/console/)
 
 > **Tip**
 >
@@ -1398,7 +1398,7 @@ IO.NET มี 17 โมเดลที่ได้รับการปรับ
 
 ### OpenCode Zen
 
-OpenCode Zen คือรายการโมเดลที่ได้รับการทดสอบและตรวจสอบแล้วโดยทีมงาน OpenCode [เรียนรู้เพิ่มเติม](/docs/zen)
+OpenCode Zen คือรายการโมเดลที่ได้รับการทดสอบและตรวจสอบแล้วโดยทีมงาน OpenCode [เรียนรู้เพิ่มเติม](https://opencode.ai/v2/docs/console/)
 
 1. ลงชื่อเข้าใช้ **<a href={console}>OpenCode Zen</a>** และคลิก **สร้าง API คีย์**
 

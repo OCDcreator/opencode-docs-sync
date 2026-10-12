@@ -367,7 +367,7 @@ Use a configuração `model` para substituir o modelo para este agente. Útil pa
 }
 ```
 
-O ID do modelo em sua configuração do opencode usa o formato `provider/model-id`. Por exemplo, se você estiver usando [OpenCode Zen](/docs/zen), você usaria `opencode/gpt-5.1-codex` para GPT 5.1 Codex.
+O ID do modelo em sua configuração do opencode usa o formato `provider/model-id`. Por exemplo, se você estiver usando [OpenCode Zen](https://opencode.ai/v2/docs/console/), você usaria `opencode/gpt-5.1-codex` para GPT 5.1 Codex.
 
 ---
 

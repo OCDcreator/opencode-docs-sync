@@ -366,7 +366,7 @@ Koristite `model` konfiguraciju da nadjačate model za ovog agenta. Korisno za k
 }
 ```
 
-ID modela u vašoj OpenCode konfiguraciji koristi format `provider/model-id`. Na primjer, ako koristite [OpenCode Zen](/docs/zen), koristili biste `opencode/gpt-5.1-codex` za GPT 5.1 Codex.
+ID modela u vašoj OpenCode konfiguraciji koristi format `provider/model-id`. Na primjer, ako koristite [OpenCode Zen](https://opencode.ai/v2/docs/console/), koristili biste `opencode/gpt-5.1-codex` za GPT 5.1 Codex.
 
 ---
 

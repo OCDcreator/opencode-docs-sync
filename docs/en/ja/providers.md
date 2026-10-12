@@ -50,7 +50,7 @@ config.
 ## OpenCode Zen
 
 OpenCode Zen は、OpenCode チームが提供するモデルのリストです。
-OpenCode で適切に動作することがテストおよび検証されています。 [詳細はこちら](/docs/zen)。
+OpenCode で適切に動作することがテストおよび検証されています。 [詳細はこちら](https://opencode.ai/v2/docs/console/)。
 
 > **Tip**
 >
@@ -1441,7 +1441,7 @@ OpenCode で Ollama Cloud を使用するには:
 
 ### OpenCode Zen
 
-OpenCode Zen は、OpenCode チームによって提供される、テストおよび検証されたモデルのリストです。 [詳細はこちら](/docs/zen)。
+OpenCode Zen は、OpenCode チームによって提供される、テストおよび検証されたモデルのリストです。 [詳細はこちら](https://opencode.ai/v2/docs/console/)。
 
 1. **<a href={console}>OpenCode Zen</a>** にサインインし、**API キーの作成** をクリックします。
 

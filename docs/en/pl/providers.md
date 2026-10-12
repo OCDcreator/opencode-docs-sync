@@ -50,7 +50,7 @@ Możesz dostosować podstawowy adres URL dla dowolnego dostawcy, ustawiając opc
 ## OpenCode Zen
 
 OpenCode Zen to lista modeli dostarczonych przez zespół opencode, które zostały
-przetestowane i zweryfikowane, aby dobrze współpracować z opencode. [Dowiedz się więcej](/docs/zen).
+przetestowane i zweryfikowane, aby dobrze współpracować z opencode. [Dowiedz się więcej](https://opencode.ai/v2/docs/console/).
 
 > **Tip**
 >
@@ -1396,7 +1396,7 @@ Jeśli posiadasz już klucz API, możesz wybrać opcję **Wprowadź klucz API r�
 
 ### OpenCode Zen
 
-OpenCode Zen to lista przetestowanych i zweryfikowanych modeli udostępniona przez zespół opencode. [Dowiedz się więcej](/docs/zen).
+OpenCode Zen to lista przetestowanych i zweryfikowanych modeli udostępniona przez zespół opencode. [Dowiedz się więcej](https://opencode.ai/v2/docs/console/).
 
 1. Zaloguj się do **<a href={console}>OpenCode Zen</a>** i kliknij **Utwórz klucz API**.
 

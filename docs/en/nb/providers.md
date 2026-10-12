@@ -50,7 +50,7 @@ Du kan tilpasse base-URL-en for enhver leverandør ved å angi alternativet `bas
 ## OpenCode Zen
 
 OpenCode Zen er en liste over modeller levert av OpenCode-teamet som har vært
-testet og verifisert for å fungere godt med OpenCode. [Finn ut mer](/docs/zen).
+testet og verifisert for å fungere godt med OpenCode. [Finn ut mer](https://opencode.ai/v2/docs/console/).
 
 > **Tip**
 >
@@ -1399,7 +1399,7 @@ Hvis du allerede har en API-nøkkel, kan du velge **Angi API-nøkkel manuelt** o
 
 ### OpenCode Zen
 
-OpenCode Zen er en liste over testede og verifiserte modeller levert av OpenCode-teamet. [Finn ut mer](/docs/zen).
+OpenCode Zen er en liste over testede og verifiserte modeller levert av OpenCode-teamet. [Finn ut mer](https://opencode.ai/v2/docs/console/).
 
 1. Logg på **<a href={console}>OpenCode Zen</a>** og klikk på **Create API Key**.
 

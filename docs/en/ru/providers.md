@@ -50,7 +50,7 @@ opencode использует [AI SDK](https://ai-sdk.dev/) и [Models.dev](http
 ## OpenCode Zen
 
 OpenCode Zen — это список моделей, предоставленный командой opencode, которые были
-протестировано и проверено на хорошую работу с opencode. [Подробнее](/docs/zen).
+протестировано и проверено на хорошую работу с opencode. [Подробнее](https://opencode.ai/v2/docs/console/).
 
 > **Tip**
 >
@@ -1397,7 +1397,7 @@ IO.NET предлагает 17 моделей, оптимизированных 
 
 ### OpenCode Zen
 
-OpenCode Zen — это список протестированных и проверенных моделей, предоставленный командой opencode. [Подробнее](/docs/zen).
+OpenCode Zen — это список протестированных и проверенных моделей, предоставленный командой opencode. [Подробнее](https://opencode.ai/v2/docs/console/).
 
 1. Войдите в систему **<a href={console}>OpenCode Zen</a>** и нажмите **Создать ключ API**.
 

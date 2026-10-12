@@ -48,7 +48,7 @@ OpenCode 使用 [AI SDK](https://ai-sdk.dev/) 和 [Models.dev](https://models.de
 
 ## OpenCode Zen
 
-OpenCode Zen 是由 OpenCode 团队提供的模型列表，这些模型已经过测试和验证，能够与 OpenCode 良好配合使用。[了解更多](/docs/zen)。
+OpenCode Zen 是由 OpenCode 团队提供的模型列表，这些模型已经过测试和验证，能够与 OpenCode 良好配合使用。[了解更多](https://opencode.ai/v2/docs/console/)。
 
 > **Tip**
 >
@@ -1360,7 +1360,7 @@ IO.NET 提供 17 个针对不同用例优化的模型：
 
 ### OpenCode Zen
 
-OpenCode Zen 是由 OpenCode 团队提供的经过测试和验证的模型列表。[了解更多](/docs/zen)。
+OpenCode Zen 是由 OpenCode 团队提供的经过测试和验证的模型列表。[了解更多](https://opencode.ai/v2/docs/console/)。
 
 1. 登录 **<a href={console}>OpenCode Zen</a>** 并点击 **Create API Key**。
 

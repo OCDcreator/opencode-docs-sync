@@ -50,7 +50,7 @@ config.
 ## OpenCode Zen
 
 OpenCode Zen, opencode ekibi tarafından sağlanan modellerin bir listesidir.
-opencode ile iyi çalıştığı test edilip doğrulandı. [Daha fazla bilgi](/docs/zen).
+opencode ile iyi çalıştığı test edilip doğrulandı. [Daha fazla bilgi](https://opencode.ai/v2/docs/console/).
 
 > **Tip**
 >
@@ -1398,7 +1398,7 @@ Zaten bir API anahtarınız varsa, **API Anahtarını Manuel Olarak Girin** seç
 
 ### OpenCode Zen
 
-OpenCode Zen, opencode ekibinin test edip doğruladığı modellerin bir listesidir. [Daha fazla bilgi](/docs/zen).
+OpenCode Zen, opencode ekibinin test edip doğruladığı modellerin bir listesidir. [Daha fazla bilgi](https://opencode.ai/v2/docs/console/).
 
 1. **<a href={console}>OpenCode Zen</a>**'de oturum açın ve **API Anahtarı Oluştur**'u tıklayın.
 

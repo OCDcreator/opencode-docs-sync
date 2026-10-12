@@ -50,7 +50,7 @@ Sie können die Base URL für jeden Anbieter anpassen, indem Sie die Option `bas
 ## OpenCode Zen
 
 OpenCode Zen ist eine Liste von Modellen, die vom OpenCode-Team bereitgestellt wurden
-Getestet und verifiziert, dass es gut mit OpenCode funktioniert. [Learn more](/docs/zen).
+Getestet und verifiziert, dass es gut mit OpenCode funktioniert. [Learn more](https://opencode.ai/v2/docs/console/).
 
 > **Tip**
 >
@@ -1397,7 +1397,7 @@ Wenn Sie bereits über einen API-Schlüssel verfügen, können Sie **API-Schlüs
 
 ### OpenCode Zen
 
-OpenCode Zen ist eine Liste getesteter und verifizierter Modelle, die vom OpenCode-Team bereitgestellt werden. [Learn more](/docs/zen).
+OpenCode Zen ist eine Liste getesteter und verifizierter Modelle, die vom OpenCode-Team bereitgestellt werden. [Learn more](https://opencode.ai/v2/docs/console/).
 
 1. Melden Sie sich bei **<a href={console}>OpenCode Zen</a>** an und klicken Sie auf **Create API Key**.
 

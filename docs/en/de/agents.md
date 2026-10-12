@@ -353,7 +353,7 @@ Verwenden Sie die `model`-Konfiguration, um das Modell für diese Agenten zu üb
 }
 ```
 
-Die Modell-ID in Ihrer OpenCode-Konfiguration verwendet das Format `provider/model-id`. Wenn Sie beispielsweise [OpenCode Zen](/docs/zen) verwenden, würden Sie `opencode/gpt-5.1-codex` für GPT 5.1 Codex verwenden.
+Die Modell-ID in Ihrer OpenCode-Konfiguration verwendet das Format `provider/model-id`. Wenn Sie beispielsweise [OpenCode Zen](https://opencode.ai/v2/docs/console/) verwenden, würden Sie `opencode/gpt-5.1-codex` für GPT 5.1 Codex verwenden.
 
 ---
 

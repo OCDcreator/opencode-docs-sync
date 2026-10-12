@@ -366,7 +366,7 @@ Bu agent'ın modelini geçersiz kılmak için `model` ayarını kullanın. Farkl
 }
 ```
 
-opencode yapılandırmanızdaki model kimliği `provider/model-id` biçimini kullanır. Örneğin, [OpenCode Zen](/docs/zen) kullanıyorsanız, GPT 5.1 Codex için `opencode/gpt-5.1-codex` kullanırsınız.
+opencode yapılandırmanızdaki model kimliği `provider/model-id` biçimini kullanır. Örneğin, [OpenCode Zen](https://opencode.ai/v2/docs/console/) kullanıyorsanız, GPT 5.1 Codex için `opencode/gpt-5.1-codex` kullanırsınız.
 
 ---
 

@@ -366,7 +366,7 @@ agent가 텍스트 응답만 하도록 강제되기 전까지 수행할 수 있�
 }
 ```
 
-OpenCode config의 model ID는 `provider/model-id` 형식을 사용합니다. 예를 들어 [OpenCode Zen](/docs/zen)을 사용한다면 GPT 5.1 Codex에 `opencode/gpt-5.1-codex`를 사용합니다.
+OpenCode config의 model ID는 `provider/model-id` 형식을 사용합니다. 예를 들어 [OpenCode Zen](https://opencode.ai/v2/docs/console/)을 사용한다면 GPT 5.1 Codex에 `opencode/gpt-5.1-codex`를 사용합니다.
 
 ---
 
