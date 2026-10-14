@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-10-13T11:36:12.086Z",
+  "lastSync": "2026-10-14T09:24:02.644Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "c1615b1db9c2e7a955f2be1024e84bb74c90cc6b",
-  "upstreamMsg": "refactor(console): call inference through a service binding (#55103)"
+  "upstreamSha": "34d8ded0c58dd66808c1d60e081e8c66da12a896",
+  "upstreamMsg": "sync release versions for v2.0.29 [skip ci]"
 }
