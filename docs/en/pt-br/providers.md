@@ -760,13 +760,12 @@ GitLab Duo fornece um chat agente com suporte a ferramentas nativas através do 
 opencode usa um pequeno modelo para algumas tarefas de AI, como gerar o título da sessão.
 Ele está configurado para usar gpt-5-nano por padrão, hospedado pela Zen. Para bloquear o opencode
 para usar apenas sua própria instância hospedada do GitLab, adicione o seguinte ao seu
-arquivo `opencode.json`. Também é recomendado desativar o compartilhamento de sessões.
+arquivo `opencode.json`.
 
 ```json
 {
   "$schema": "https://opencode.ai/config.json",
-  "small_model": "gitlab/duo-chat-haiku-4-5",
-  "share": "disabled"
+  "small_model": "gitlab/duo-chat-haiku-4-5"
 }
 ```
 

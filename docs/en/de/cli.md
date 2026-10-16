@@ -343,7 +343,6 @@ opencode run --attach http://localhost:4096 "Explain async/await in JavaScript"
 |  | `-c` | Setzen Sie die letzte Sitzung fort                                                                  |
 |   | `-s` | Session-ID zum Fortfahren                                                                           |
 |      |      | Sitzung beim Fortsetzen verzweigen (mit `--continue` oder `--session` verwenden)                    |
-|     |      | Teilen Sie die Sitzung                                                                              |
 |     | `-m` | Zu verwendendes Modell in der Form provider/model                                                   |
 |     |      | Zu verwendender Agent                                                                               |
 |      | `-f` | Datei(en) zum Anhängen an die Nachricht                                                             |
@@ -440,17 +439,14 @@ Wenn Sie keine Sitzungs-ID angeben, werden Sie aufgefordert, eine der verfügbar
 
 ### import
 
-Importieren Sie Sitzungsdaten aus einer JSON-Datei oder einer OpenCode-Freigabe-URL.
+Importieren Sie Sitzungsdaten aus einer JSON-Datei.
 
 ```bash
 opencode import <file>
 ```
 
-Sie können aus einer lokalen Datei oder einer OpenCode-Freigabe-URL importieren.
-
 ```bash
 opencode import session.json
-opencode import https://opncd.ai/s/abc123
 ```
 
 ---
@@ -562,7 +558,6 @@ OpenCode kann mithilfe von Umgebungsvariablen konfiguriert werden.
 
 | Variable                              | Typ             | Beschreibung                                                                     |
 | ------------------------------------- | --------------- | -------------------------------------------------------------------------------- |
-| `OPENCODE_AUTO_SHARE`                 | boolescher Wert | Sitzungen automatisch teilen                                                     |
 | `OPENCODE_GIT_BASH_PATH`              | Zeichenfolge    | Pfad zur ausführbaren Git Bash-Datei unter Windows                               |
 | `OPENCODE_CONFIG`                     | Zeichenfolge    | Pfad zur Konfigurationsdatei                                                     |
 | `OPENCODE_CONFIG_DIR`                 | Zeichenfolge    | Pfad zum Konfigurationsverzeichnis                                               |

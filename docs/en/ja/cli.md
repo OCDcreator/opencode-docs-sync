@@ -343,7 +343,6 @@ opencode run --attach http://localhost:4096 "Explain async/await in JavaScript"
 |  | `-c`     | 最後のセッションを続行                                                                    |
 |   | `-s`     | 続行するセッション ID                                                                     |
 |      |          | 続行時にセッションをフォーク (`--continue` または `--session` と併用)                     |
-|     |          | セッションを共有する                                                                      |
 |     | `-m`     | プロバイダー/モデルの形式で使用するモデル                                                 |
 |     |          | 使用するエージェント                                                                      |
 |      | `-f`     | メッセージに添付するファイル                                                              |
@@ -440,17 +439,14 @@ opencode export [sessionID]
 
 ### import
 
-JSON ファイルまたは OpenCode 共有 URL からセッションデータをインポートします。
+JSON ファイルからセッションデータをインポートします。
 
 ```bash
 opencode import <file>
 ```
 
-ローカルファイルまたは OpenCode 共有 URL からインポートできます。
-
 ```bash
 opencode import session.json
-opencode import https://opncd.ai/s/abc123
 ```
 
 ---
@@ -562,7 +558,6 @@ OpenCode は環境変数を使用して構成できます。
 
 | 変数                                  | タイプ   | 説明                                                                |
 | ------------------------------------- | -------- | ------------------------------------------------------------------- |
-| `OPENCODE_AUTO_SHARE`                 | ブール値 | セッションを自動的に共有する                                        |
 | `OPENCODE_GIT_BASH_PATH`              | 文字列   | Windows 上で実行可能な Git Bash へのパス                            |
 | `OPENCODE_CONFIG`                     | 文字列   | 構成ファイルへのパス                                                |
 | `OPENCODE_CONFIG_DIR`                 | 文字列   | config ディレクトリへのパス                                         |

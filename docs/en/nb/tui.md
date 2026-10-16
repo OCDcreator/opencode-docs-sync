@@ -216,18 +216,6 @@ List opp og bytt mellom økter. _Aliaser_: `/resume`, `/continue`
 
 ---
 
-### share
-
-Del gjeldende økt. [Finn ut mer](/docs/share).
-
-```bash frame="none"
-/share
-```
-
-**Nøkkelbinding:** `ctrl+x s`
-
----
-
 ### themes
 
 Liste over tilgjengelige temaer.
@@ -270,16 +258,6 @@ være et Git-repo**.
 ```
 
 **Nøkkelbinding:** `ctrl+x u`
-
----
-
-### unshare
-
-Opphev deling av gjeldende økt. [Finn ut mer](/docs/share#un-sharing).
-
-```bash frame="none"
-/unshare
-```
 
 ---
 

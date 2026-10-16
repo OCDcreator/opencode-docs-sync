@@ -343,7 +343,6 @@ opencode run --attach http://localhost:4096 "Explain async/await in JavaScript"
 |  | `-c` | Fortsæt sidste session                                                              |
 |   | `-s` | Sessions-id for at fortsætte                                                        |
 |      |      | Forgren sessionen ved fortsættelse (brug med `--continue` eller `--session`)        |
-|     |      | Del sessionen                                                                       |
 |     | `-m` | Model til brug i form af provider/model                                             |
 |     |      | Agent til brug                                                                      |
 |      | `-f` | Fil(er), der skal vedhæftes til meddelelsen                                         |
@@ -440,17 +439,14 @@ Hvis du ikke angiver et sessions-id, bliver du bedt om at vælge mellem tilgæng
 
 ### import
 
-Importer sessionsdata fra en JSON fil eller OpenCode del URL.
+Importer sessionsdata fra en JSON fil.
 
 ```bash
 opencode import <file>
 ```
 
-Du kan importere fra en lokal fil eller en OpenCode share URL.
-
 ```bash
 opencode import session.json
-opencode import https://opncd.ai/s/abc123
 ```
 
 ---
@@ -562,7 +558,6 @@ OpenCode kan konfigureres ved hjælp af miljøvariabler.
 
 | Variabel                              | Skriv   | Beskrivelse                                                           |
 | ------------------------------------- | ------- | --------------------------------------------------------------------- |
-| `OPENCODE_AUTO_SHARE`                 | boolean | Del automatisk session                                                |
 | `OPENCODE_GIT_BASH_PATH`              | string  | Sti til Git Bash eksekverbar på Windows                               |
 | `OPENCODE_CONFIG`                     | string  | Sti til konfigurationsfil                                             |
 | `OPENCODE_TUI_CONFIG`                 | string  | Sti til TUI-konfigurationsfil                                         |

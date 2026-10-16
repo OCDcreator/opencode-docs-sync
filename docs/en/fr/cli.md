@@ -343,7 +343,6 @@ opencode run --attach http://localhost:4096 "Explain async/await in JavaScript"
 |  | `-c`  | Continuer la dernière session                                                                      |
 |   | `-s`  | ID de session pour continuer                                                                       |
 |      |       | Forker la session en continuant (à utiliser avec `--continue` ou `--session`)                      |
-|     |       | Partager la session                                                                                |
 |     | `-m`  | Modèle à utiliser sous forme de fournisseur/modèle                                                 |
 |     |       | Agent à utiliser                                                                                   |
 |      | `-f`  | Fichier(s) à joindre au message                                                                    |
@@ -440,17 +439,14 @@ Si vous ne fournissez pas d'ID de session, vous serez invité à sélectionner p
 
 ### import
 
-Importez les données de session à partir d'un fichier JSON ou d'une URL de partage OpenCode.
+Importez les données de session à partir d'un fichier JSON.
 
 ```bash
 opencode import <file>
 ```
 
-Vous pouvez importer à partir d'un fichier local ou d'une URL de partage OpenCode.
-
 ```bash
 opencode import session.json
-opencode import https://opncd.ai/s/abc123
 ```
 
 ---
@@ -562,7 +558,6 @@ OpenCode peut être configuré à l'aide de variables d'environnement.
 
 | Variables                             | Type    | Description                                                                       |
 | ------------------------------------- | ------- | --------------------------------------------------------------------------------- |
-| `OPENCODE_AUTO_SHARE`                 | booléen | Partager automatiquement des sessions                                             |
 | `OPENCODE_GIT_BASH_PATH`              | chaîne  | Chemin vers l'exécutable Git Bash sur Windows                                     |
 | `OPENCODE_CONFIG`                     | chaîne  | Chemin d'accès au fichier de configuration                                        |
 | `OPENCODE_TUI_CONFIG`                 | chaîne  | Chemin d'accès au fichier de configuration TUI                                    |

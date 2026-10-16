@@ -343,7 +343,6 @@ opencode run --attach http://localhost:4096 "Explain async/await in JavaScript"
 |  | `-c` | Son oturuma devam et                                                                          |
 |   | `-s` | Devam edecek oturum kimliği                                                                   |
 |      |      | Devam ederken oturumu fork'lar (`--continue` veya `--session` ile kullanın)                   |
-|     |      | Oturumu paylaşın                                                                              |
 |     | `-m` | provider/model biçiminde kullanılacak model                                                   |
 |     |      | Kullanılacak temsilci                                                                         |
 |      | `-f` | Mesaja eklenecek dosya(lar)                                                                   |
@@ -440,17 +439,14 @@ Bir oturum kimliği sağlamazsanız mevcut oturumlar arasından seçim yapmanız
 
 ### import
 
-Bir JSON dosyasından veya opencode paylaşımından URL oturum verilerini içe aktarın.
+Bir JSON dosyasından oturum verilerini içe aktarın.
 
 ```bash
 opencode import <file>
 ```
 
-Yerel bir dosyadan veya opencode paylaşımından (URL) içe aktarabilirsiniz.
-
 ```bash
 opencode import session.json
-opencode import https://opncd.ai/s/abc123
 ```
 
 ---
@@ -562,7 +558,6 @@ opencode ortam değişkenleri kullanılarak yapılandırılabilir.
 
 | Değişken                              | Tip     | Açıklama                                                                    |
 | ------------------------------------- | ------- | --------------------------------------------------------------------------- |
-| `OPENCODE_AUTO_SHARE`                 | boolean | Oturumları otomatik olarak paylaş                                           |
 | `OPENCODE_GIT_BASH_PATH`              | string  | Windows'ta yürütülebilir Git Bash'in Yolu                                   |
 | `OPENCODE_CONFIG`                     | string  | Yapılandırma dosyasının yolu                                                |
 | `OPENCODE_TUI_CONFIG`                 | string  | TUI yapılandırma dosyasının yolu                                            |

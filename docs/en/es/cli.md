@@ -343,7 +343,6 @@ opencode run --attach http://localhost:4096 "Explain async/await in JavaScript"
 |  | `-c`  | Continuar la última sesión                                                                |
 |   | `-s`  | ID de sesión para continuar                                                               |
 |      |       | Bifurcar la sesión al continuar (usar con `--continue` o `--session`)                     |
-|     |       | Comparte la sesión                                                                        |
 |     | `-m`  | Modelo a utilizar en forma de proveedor/modelo                                            |
 |     |       | Agente a utilizar                                                                         |
 |      | `-f`  | Archivo(s) para adjuntar al mensaje                                                       |
@@ -440,17 +439,14 @@ Si no proporciona una ID de sesión, se le pedirá que seleccione entre las sesi
 
 ### import
 
-Importe datos de sesión desde un archivo JSON o una URL compartida OpenCode.
+Importe datos de sesión desde un archivo JSON.
 
 ```bash
 opencode import <file>
 ```
 
-Puede importar desde un archivo local o una URL compartida OpenCode.
-
 ```bash
 opencode import session.json
-opencode import https://opncd.ai/s/abc123
 ```
 
 ---
@@ -562,7 +558,6 @@ OpenCode se puede configurar mediante variables de entorno.
 
 | Variable                              | Type     | Description                                                                     |
 | ------------------------------------- | -------- | ------------------------------------------------------------------------------- |
-| `OPENCODE_AUTO_SHARE`                 | booleano | Compartir sesiones automáticamente                                              |
 | `OPENCODE_GIT_BASH_PATH`              | cadena   | Ruta al ejecutable de Git Bash en Windows                                       |
 | `OPENCODE_CONFIG`                     | cadena   | Ruta al archivo de configuración                                                |
 | `OPENCODE_CONFIG_DIR`                 | cadena   | Ruta al directorio de configuración                                             |

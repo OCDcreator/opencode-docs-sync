@@ -215,18 +215,6 @@ How is auth handled in @packages/functions/src/api/index.ts?
 
 ---
 
-### share
-
-شارك الجلسة الحالية. [اعرف المزيد](/docs/share).
-
-```bash frame="none"
-/share
-```
-
-**اختصار لوحة المفاتيح:** `ctrl+x s`
-
----
-
 ### themes
 
 اعرض السمات المتاحة.
@@ -268,16 +256,6 @@ How is auth handled in @packages/functions/src/api/index.ts?
 ```
 
 **اختصار لوحة المفاتيح:** `ctrl+x u`
-
----
-
-### unshare
-
-ألغِ مشاركة الجلسة الحالية. [اعرف المزيد](/docs/share#un-sharing).
-
-```bash frame="none"
-/unshare
-```
 
 ---
 

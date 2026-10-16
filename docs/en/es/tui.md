@@ -216,18 +216,6 @@ Enumere y cambie entre sesiones. _Alias_: `/resume`, `/continue`
 
 ---
 
-### share
-
-Compartir la sesión actual. [Más información](/docs/share).
-
-```bash frame="none"
-/share
-```
-
-**Combinación de teclas:** `ctrl+x s`
-
----
-
 ### theme
 
 Listar temas disponibles.
@@ -270,16 +258,6 @@ ser un repositorio Git**.
 ```
 
 **Combinación de teclas:** `ctrl+x u`
-
----
-
-### unshare
-
-Dejar de compartir la sesión actual. [Más información](/docs/share#un-sharing).
-
-```bash frame="none"
-/unshare
-```
 
 ---
 

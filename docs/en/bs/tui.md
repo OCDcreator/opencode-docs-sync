@@ -216,18 +216,6 @@ Listanje i prebacivanje između sesija. _Aliases_: `/resume`, `/continue`
 
 ---
 
-### share
-
-Podijelite trenutnu sesiju. [Saznajte više](/docs/share).
-
-```bash frame="none"
-/share
-```
-
-**Tastatura:** `ctrl+x s`
-
----
-
 ### themes
 
 Navedite dostupne teme.
@@ -270,16 +258,6 @@ biti Git spremište**.
 ```
 
 **Tastatura:** `ctrl+x u`
-
----
-
-### unshare
-
-Poništi dijeljenje trenutne sesije. [Saznajte više](/docs/share#un-sharing).
-
-```bash frame="none"
-/unshare
-```
 
 ---
 

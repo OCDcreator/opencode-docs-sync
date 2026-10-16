@@ -215,18 +215,6 @@ How is auth handled in @packages/functions/src/api/index.ts?
 
 ---
 
-### share
-
-分享当前会话。[了解更多](/docs/share)。
-
-```bash frame="none"
-/share
-```
-
-**快捷键：** `ctrl+x s`
-
----
-
 ### themes
 
 列出可用主题。
@@ -268,16 +256,6 @@ How is auth handled in @packages/functions/src/api/index.ts?
 ```
 
 **快捷键：** `ctrl+x u`
-
----
-
-### unshare
-
-取消分享当前会话。[了解更多](/docs/share#un-sharing)。
-
-```bash frame="none"
-/unshare
-```
 
 ---
 

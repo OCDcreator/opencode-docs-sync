@@ -215,18 +215,6 @@ Liste e alterne entre sessões. _Aliases_: `/resume`, `/continue`
 
 ---
 
-### share
-
-Compartilhe a sessão atual. [Saiba mais](/docs/share).
-
-```bash frame="none"
-/share
-```
-
-**Atalho:** `ctrl+x s`
-
----
-
 ### themes
 
 Liste os temas disponíveis.
@@ -268,16 +256,6 @@ Internamente, isso usa Git para gerenciar as alterações de arquivo. Portanto, 
 ```
 
 **Atalho:** `ctrl+x u`
-
----
-
-### unshare
-
-Descompartilhe a sessão atual. [Saiba mais](/docs/share#un-sharing).
-
-```bash frame="none"
-/unshare
-```
 
 ---
 

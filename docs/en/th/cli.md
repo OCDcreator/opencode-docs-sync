@@ -344,7 +344,6 @@ opencode run --attach http://localhost:4096 "Explain async/await in JavaScript"
 |  | `-c` | ดำเนินการต่อจากเซสชันล่าสุด                                                                 |
 |   | `-s` | ID เซสชันเพื่อดำเนินการต่อ                                                                  |
 |      |      | แยกเซสชันเมื่อทำต่อ (ใช้กับ `--continue` หรือ `--session`)                                  |
-|     |      | สร้างลิงก์แชร์สำหรับเซสชัน                                                                  |
 |     | `-m` | โมเดลที่จะใช้ในรูปแบบ provider/model                                                        |
 |     |      | เอเจนต์ที่จะใช้                                                                             |
 |      | `-f` | แนบไฟล์ไปกับข้อความ                                                                         |
@@ -441,17 +440,14 @@ opencode export [sessionID]
 
 ### import
 
-นำเข้าเซสชันจากไฟล์ JSON หรือ URL ที่แชร์ของ OpenCode
+นำเข้าเซสชันจากไฟล์ JSON
 
 ```bash
 opencode import <file>
 ```
 
-คุณสามารถนำเข้าไฟล์ในเครื่องหรือ URL ที่แชร์
-
 ```bash
 opencode import session.json
-opencode import https://opncd.ai/s/abc123
 ```
 
 ---
@@ -563,7 +559,6 @@ OpenCode สามารถกำหนดค่าโดยใช้ตัว�
 
 | ตัวแปร                                | ชนิด    | คำอธิบาย                                                         |
 | ------------------------------------- | ------- | ---------------------------------------------------------------- |
-| `OPENCODE_AUTO_SHARE`                 | Boolean | แชร์เซสชันอัตโนมัติเมื่อสร้าง                                    |
 | `OPENCODE_GIT_BASH_PATH`              | String  | เส้นทางไปยัง Git Bash บน Windows                                 |
 | `OPENCODE_CONFIG`                     | String  | เส้นทางไปยังไฟล์การกำหนดค่า                                      |
 | `OPENCODE_TUI_CONFIG`                 | String  | เส้นทางไปยังไฟล์การกำหนดค่า TUI                                  |

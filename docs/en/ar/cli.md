@@ -343,7 +343,6 @@ opencode run --attach http://localhost:4096 "Explain async/await in JavaScript"
 |  | `-c`    | متابعة الجلسة الأخيرة                                                             |
 |   | `-s`    | معرّف الجلسة للمتابعة                                                             |
 |      |         | تفريع الجلسة عند المتابعة (يستخدم مع `--continue` أو `--session`)                 |
-|     |         | مشاركة الجلسة                                                                     |
 |     | `-m`    | النموذج المراد استخدامه بصيغة provider/model                                      |
 |     |         | الوكيل المراد استخدامه                                                            |
 |      | `-f`    | ملف/ملفات لإرفاقها بالرسالة                                                       |
@@ -440,17 +439,14 @@ opencode export [sessionID]
 
 ### import
 
-استيراد بيانات الجلسة من ملف JSON أو رابط مشاركة OpenCode.
+استيراد بيانات الجلسة من ملف JSON.
 
 ```bash
 opencode import <file>
 ```
 
-يمكنك الاستيراد من ملف محلي أو من رابط مشاركة OpenCode.
-
 ```bash
 opencode import session.json
-opencode import https://opncd.ai/s/abc123
 ```
 
 ---
@@ -562,7 +558,6 @@ opencode upgrade v0.1.48
 
 | المتغير                               | النوع   | الوصف                                                     |
 | ------------------------------------- | ------- | --------------------------------------------------------- |
-| `OPENCODE_AUTO_SHARE`                 | boolean | مشاركة الجلسات تلقائيا                                    |
 | `OPENCODE_GIT_BASH_PATH`              | string  | مسار ملف Git Bash التنفيذي على Windows                    |
 | `OPENCODE_CONFIG`                     | string  | مسار ملف التهيئة                                          |
 | `OPENCODE_CONFIG_DIR`                 | string  | مسار دليل التهيئة                                         |

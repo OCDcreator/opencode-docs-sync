@@ -343,7 +343,6 @@ opencode run --attach http://localhost:4096 "Explique async/await em JavaScript"
 |  | `-c`  | Continue a última sessão                                                          |
 |   | `-s`  | ID da sessão para continuar                                                       |
 |      |       | Criar um fork da sessão ao continuar (use com `--continue` ou `--session`)        |
-|     |       | Compartilhe a sessão                                                              |
 |     | `-m`  | Modelo a ser usado na forma de provider/model                                     |
 |     |       | Agente a ser usado                                                                |
 |      | `-f`  | Arquivo(s) a serem anexados à mensagem                                            |
@@ -440,17 +439,14 @@ Se você não fornecer um ID de sessão, será solicitado que você selecione en
 
 ### import
 
-Importe dados da sessão de um arquivo JSON ou URL de compartilhamento do opencode.
+Importe dados da sessão de um arquivo JSON.
 
 ```bash
 opencode import <file>
 ```
 
-Você pode importar de um arquivo local ou de uma URL de compartilhamento do opencode.
-
 ```bash
 opencode import session.json
-opencode import https://opncd.ai/s/abc123
 ```
 
 ---
@@ -562,7 +558,6 @@ O opencode pode ser configurado usando variáveis de ambiente.
 
 | Variável                              | Tipo    | Descrição                                                             |
 | ------------------------------------- | ------- | --------------------------------------------------------------------- |
-| `OPENCODE_AUTO_SHARE`                 | boolean | Compartilhar sessões automaticamente                                  |
 | `OPENCODE_GIT_BASH_PATH`              | string  | Caminho para o executável do Git Bash no Windows                      |
 | `OPENCODE_CONFIG`                     | string  | Caminho para o arquivo de configuração                                |
 | `OPENCODE_CONFIG_DIR`                 | string  | Caminho para o diretório de configuração                              |

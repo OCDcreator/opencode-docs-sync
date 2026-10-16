@@ -343,7 +343,6 @@ opencode run --attach http://localhost:4096 "Explain async/await in JavaScript"
 |  | `-c` | 繼續上一個工作階段                                                      |
 |   | `-s` | 要繼續的工作階段 ID                                                     |
 |      |      | 繼續時分岔工作階段（與 `--continue` 或 `--session` 搭配使用）           |
-|     |      | 分享工作階段                                                            |
 |     | `-m` | 要使用的模型，格式為 provider/model                                     |
 |     |      | 要使用的代理                                                            |
 |      | `-f` | 附加到訊息的檔案                                                        |
@@ -440,17 +439,14 @@ opencode export [sessionID]
 
 ### import
 
-從 JSON 檔案或 OpenCode 分享連結匯入工作階段資料。
+從 JSON 檔案匯入工作階段資料。
 
 ```bash
 opencode import <file>
 ```
 
-您可以從本地檔案或 OpenCode 分享連結匯入。
-
 ```bash
 opencode import session.json
-opencode import https://opncd.ai/s/abc123
 ```
 
 ---
@@ -562,7 +558,6 @@ OpenCode 可以透過環境變數進行設定。
 
 | 變數                                  | 類型    | 說明                                        |
 | ------------------------------------- | ------- | ------------------------------------------- |
-| `OPENCODE_AUTO_SHARE`                 | boolean | 自動分享工作階段                            |
 | `OPENCODE_GIT_BASH_PATH`              | string  | Windows 上 Git Bash 可執行檔的路徑          |
 | `OPENCODE_CONFIG`                     | string  | 設定檔路徑                                  |
 | `OPENCODE_TUI_CONFIG`                 | string  | TUI 設定檔路徑                              |

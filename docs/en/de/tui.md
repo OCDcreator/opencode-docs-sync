@@ -218,18 +218,6 @@ Listet Sessions und wechselt zwischen ihnen. _Aliase_: `/resume`, `/continue`
 
 ---
 
-### share
-
-Teilt die aktuelle Session. [Mehr dazu](/docs/share).
-
-```bash frame="none"
-/share
-```
-
-**Keybind:** `ctrl+x s`
-
----
-
 ### themes
 
 Listet verfuegbare Themes.
@@ -271,16 +259,6 @@ Intern nutzt dies Git, um die Dateiaenderungen zu verwalten. Dein Projekt muss a
 ```
 
 **Keybind:** `ctrl+x u`
-
----
-
-### unshare
-
-Hebt das Teilen der aktuellen Session auf. [Mehr dazu](/docs/share#un-sharing).
-
-```bash frame="none"
-/unshare
-```
 
 ---
 

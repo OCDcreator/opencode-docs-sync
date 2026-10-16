@@ -340,7 +340,6 @@ opencode run --attach http://localhost:4096 "Explain async/await in JavaScript"
 |  | `-c`   | Nastavite posljednju sesiju                                                                   |
 |   | `-s`   | ID sesije za nastavak                                                                         |
 |      |        | Forkujte sesiju pri nastavku (koristiti sa `--continue` ili `--session`)                      |
-|     |        | Podijelite sesiju                                                                             |
 |     | `-m`   | Model za korištenje u obliku provider/model                                                   |
 |     |        | Agent za korištenje                                                                           |
 |      | `-f`   | Fajlovi koje treba priložiti poruci                                                           |
@@ -437,17 +436,14 @@ Ako ne unesete ID sesije, od vas će biti zatraženo da odaberete neku od dostup
 
 ### import
 
-Uvezite podatke sesije iz JSON datoteke ili OpenCode dijeljenog URL-a.
+Uvezite podatke sesije iz JSON datoteke.
 
 ```bash
 opencode import <file>
 ```
 
-Možete uvesti iz lokalne datoteke ili OpenCode dijeljenog URL-a.
-
 ```bash
 opencode import session.json
-opencode import https://opncd.ai/s/abc123
 ```
 
 ---
@@ -559,7 +555,6 @@ OpenCode se može konfigurirati pomoću varijabli okruženja.
 
 | Varijabla                             | Tip     | Opis                                                               |
 | ------------------------------------- | ------- | ------------------------------------------------------------------ |
-| `OPENCODE_AUTO_SHARE`                 | boolean | Automatski dijeli sesije                                           |
 | `OPENCODE_GIT_BASH_PATH`              | string  | Putanja do Git Bash izvršne datoteke na Windows-u                  |
 | `OPENCODE_CONFIG`                     | string  | Putanja do konfiguracijskog fajla                                  |
 | `OPENCODE_TUI_CONFIG`                 | string  | Putanja do TUI konfiguracijskog fajla                              |

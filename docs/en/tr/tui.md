@@ -215,18 +215,6 @@ Oturumları listeler ve aralarında geçiş yapar. _Takma adlar_: `/resume`, `/c
 
 ---
 
-### share
-
-Mevcut oturumu paylaşır. [Daha fazla bilgi](/docs/share).
-
-```bash frame="none"
-/share
-```
-
-**Kısayol:** `ctrl+x s`
-
----
-
 ### themes
 
 Kullanılabilir temaları listeler.
@@ -268,16 +256,6 @@ Dahili olarak bu işlem dosya değişikliklerini yönetmek için Git kullanır. 
 ```
 
 **Kısayol:** `ctrl+x u`
-
----
-
-### unshare
-
-Mevcut oturumun paylaşımını kaldırır. [Daha fazla bilgi](/docs/share#un-sharing).
-
-```bash frame="none"
-/unshare
-```
 
 ---
 

@@ -216,18 +216,6 @@ Répertoriez et basculez entre les sessions. *Alias* : `/resume`, `/continue`
 
 ---
 
-### share
-
-Partager la session en cours. [En savoir plus](/docs/share).
-
-```bash frame="none"
-/share
-```
-
-**Reliure de touches :** `ctrl+x s`
-
----
-
 ### theme
 
 Répertoriez les thèmes disponibles.
@@ -270,16 +258,6 @@ En interne, cela utilise Git pour gérer les modifications de fichiers. Votre pr
 ```
 
 **Reliure de touches :** `ctrl+x u`
-
----
-
-### unshare
-
-Annuler le partage de la session en cours. [En savoir plus](/docs/share#un-sharing).
-
-```bash frame="none"
-/unshare
-```
 
 ---
 

@@ -533,27 +533,6 @@ The default is `1`, which allows primary agents to launch subagents but prevents
 
 ---
 
-### Sharing
-
-You can configure the [share](/docs/share) feature through the `share` option.
-
-```json title="opencode.json"
-{
-  "$schema": "https://opencode.ai/config.json",
-  "share": "manual"
-}
-```
-
-This takes:
-
-- `"manual"` - Allow manual sharing via commands (default)
-- `"auto"` - Automatically share new conversations
-- `"disabled"` - Disable sharing entirely
-
-By default, sharing is set to manual mode where you need to explicitly share conversations using the `/share` command.
-
----
-
 ### Commands
 
 You can configure custom commands for repetitive tasks through the `command` option.

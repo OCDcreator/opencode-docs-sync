@@ -366,7 +366,6 @@ opencode run --attach http://localhost:4096 "Explain async/await in JavaScript"
 |  | `-c`  | Continue the last session                                                  |
 |   | `-s`  | Session ID to continue                                                     |
 |      |       | Fork the session when continuing (use with `--continue` or `--session`)    |
-|     |       | Share the session                                                          |
 |     | `-m`  | Model to use in the form of provider/model                                 |
 |     |       | Agent to use                                                               |
 |      | `-f`  | File(s) to attach to message                                               |
@@ -481,17 +480,14 @@ If you don't provide a session ID, you'll be prompted to select from available s
 
 ### import
 
-Import session data from a JSON file or OpenCode share URL.
+Import session data from a JSON file.
 
 ```bash
 opencode import <file>
 ```
 
-You can import from a local file or an OpenCode share URL.
-
 ```bash
 opencode import session.json
-opencode import https://opncd.ai/s/abc123
 ```
 
 ---
@@ -677,7 +673,6 @@ OpenCode can be configured using environment variables.
 
 | Variable                              | Type    | Description                                       |
 | ------------------------------------- | ------- | ------------------------------------------------- |
-| `OPENCODE_AUTO_SHARE`                 | boolean | Automatically share sessions                      |
 | `OPENCODE_GIT_BASH_PATH`              | string  | Path to Git Bash executable on Windows            |
 | `OPENCODE_CONFIG`                     | string  | Path to config file                               |
 | `OPENCODE_TUI_CONFIG`                 | string  | Path to TUI config file                           |

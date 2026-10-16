@@ -216,18 +216,6 @@ How is auth handled in @packages/functions/src/api/index.ts?
 
 ---
 
-### share
-
-แบ่งปันเซสชั่นปัจจุบัน [เรียนรู้เพิ่มเติม](/docs/share)
-
-```bash frame="none"
-/share
-```
-
-**ผูกปุ่ม:** `ctrl+x s`
-
----
-
 ### themes
 
 แสดงรายการธีมที่มีอยู่
@@ -270,16 +258,6 @@ How is auth handled in @packages/functions/src/api/index.ts?
 ```
 
 **ผูกปุ่ม:** `ctrl+x u`
-
----
-
-### unshare
-
-ยกเลิกการแชร์เซสชันปัจจุบัน [เรียนรู้เพิ่มเติม](/docs/share#un-sharing)
-
-```bash frame="none"
-/unshare
-```
 
 ---
 

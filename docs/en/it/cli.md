@@ -343,7 +343,6 @@ opencode run --attach http://localhost:4096 "Explain async/await in JavaScript"
 |  | `-c`  | Continua l'ultima sessione                                                                      |
 |   | `-s`  | ID sessione da continuare                                                                       |
 |      |       | Duplica la sessione quando continui (usa con `--continue` o `--session`)                        |
-|     |       | Condividi la sessione                                                                           |
 |     | `-m`  | Modello nel formato provider/model                                                              |
 |     |       | Agente da usare                                                                                 |
 |      | `-f`  | File da allegare al messaggio                                                                   |
@@ -440,17 +439,14 @@ Se non fornisci un ID sessione, ti verrà chiesto di selezionare tra le sessioni
 
 ### import
 
-Importa i dati di sessione da un file JSON o da un URL di condivisione OpenCode.
+Importa i dati di sessione da un file JSON.
 
 ```bash
 opencode import <file>
 ```
 
-Puoi importare da un file locale o da un URL di condivisione OpenCode.
-
 ```bash
 opencode import session.json
-opencode import https://opncd.ai/s/abc123
 ```
 
 ---
@@ -562,7 +558,6 @@ OpenCode può essere configurato tramite variabili d'ambiente.
 
 | Variabile                             | Tipo    | Descrizione                                                 |
 | ------------------------------------- | ------- | ----------------------------------------------------------- |
-| `OPENCODE_AUTO_SHARE`                 | boolean | Condivide automaticamente le sessioni                       |
 | `OPENCODE_GIT_BASH_PATH`              | string  | Percorso all'eseguibile Git Bash su Windows                 |
 | `OPENCODE_CONFIG`                     | string  | Percorso al file di configurazione                          |
 | `OPENCODE_TUI_CONFIG`                 | string  | Percorso al file di configurazione TUI                      |

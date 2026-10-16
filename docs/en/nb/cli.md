@@ -343,7 +343,6 @@ opencode run --attach http://localhost:4096 "Explain async/await in JavaScript"
 |  | `-c` | Fortsett siste økt                                                                                 |
 |   | `-s` | Økt ID for å fortsette                                                                             |
 |      |      | Forgren økten ved fortsettelse (bruk med `--continue` eller `--session`)                           |
-|     |      | Del økten                                                                                          |
 |     | `-m` | Modell å bruke i form av leverandør/modell                                                         |
 |     |      | Agent å bruke                                                                                      |
 |      | `-f` | Fil(er) som skal legges ved meldingen                                                              |
@@ -440,17 +439,14 @@ Hvis du ikke gir en økt ID, blir du bedt om å velge fra tilgjengelige økter.
 
 ### import
 
-Importer øktdata fra en JSON-fil eller en OpenCode share-URL.
+Importer øktdata fra en JSON-fil.
 
 ```bash
 opencode import <file>
 ```
 
-Du kan importere fra en lokal fil eller en OpenCode share-URL.
-
 ```bash
 opencode import session.json
-opencode import https://opncd.ai/s/abc123
 ```
 
 ---
@@ -562,7 +558,6 @@ OpenCode kan konfigureres ved hjelp av miljøvariabler.
 
 | Variabel                              | Type   | Beskrivelse                                                           |
 | ------------------------------------- | ------ | --------------------------------------------------------------------- |
-| `OPENCODE_AUTO_SHARE`                 | boolsk | Del økter automatisk                                                  |
 | `OPENCODE_GIT_BASH_PATH`              | streng | Bane til Git Bash-kjørbar på Windows                                  |
 | `OPENCODE_CONFIG`                     | streng | Bane til konfigurasjonsfil                                            |
 | `OPENCODE_TUI_CONFIG`                 | streng | Bane til TUI-konfigurasjonsfil                                        |

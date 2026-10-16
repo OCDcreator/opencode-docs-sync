@@ -343,7 +343,6 @@ opencode run --attach http://localhost:4096 "Explain async/await in JavaScript"
 |  | `-c` | 마지막 세션 이어서 실행                                                    |
 |   | `-s` | 이어서 실행할 세션 ID                                                      |
 |      |      | 세션을 이어갈 때 포크 생성 (`--continue` 또는 `--session`과 함께 사용)     |
-|     |      | 세션 공유                                                                  |
 |     | `-m` | 사용할 모델 (`provider/model` 형식)                                        |
 |     |      | 사용할 에이전트                                                            |
 |      | `-f` | 메시지에 첨부할 파일                                                       |
@@ -440,17 +439,14 @@ opencode export [sessionID]
 
 ### import
 
-JSON 파일 또는 OpenCode 공유 URL에서 세션 데이터를 가져옵니다.
+JSON 파일에서 세션 데이터를 가져옵니다.
 
 ```bash
 opencode import <file>
 ```
 
-로컬 파일이나 OpenCode 공유 URL에서 가져올 수 있습니다.
-
 ```bash
 opencode import session.json
-opencode import https://opncd.ai/s/abc123
 ```
 
 ---
@@ -562,7 +558,6 @@ OpenCode는 환경 변수로도 구성할 수 있습니다.
 
 | 변수                                  | 타입    | 설명                                           |
 | ------------------------------------- | ------- | ---------------------------------------------- |
-| `OPENCODE_AUTO_SHARE`                 | boolean | 세션 자동 공유                                 |
 | `OPENCODE_GIT_BASH_PATH`              | string  | Windows에서 Git Bash 실행 파일 경로            |
 | `OPENCODE_CONFIG`                     | string  | 설정 파일 경로                                 |
 | `OPENCODE_CONFIG_DIR`                 | string  | 설정 디렉터리 경로                             |

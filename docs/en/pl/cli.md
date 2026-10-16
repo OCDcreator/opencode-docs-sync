@@ -343,7 +343,6 @@ opencode run --attach http://localhost:4096 "Explain async/await in JavaScript"
 |  | `-c`  | Kontynuuj ostatnią sesję                                                                              |
 |   | `-s`  | Identyfikator sesji do kontynuowania                                                                  |
 |      |       | Sklonuj sesję podczas kontynuacji (użyj z `--continue` lub `--session`)                               |
-|     |       | Udostępnij sesję po zakończeniu                                                                       |
 |     | `-m`  | Model do użycia w formacie dostawca/model                                                             |
 |     |       | Agent do użycia                                                                                       |
 |      | `-f`  | Pliki do załączenia do wiadomości                                                                     |
@@ -440,17 +439,14 @@ Jeśli nie podasz identyfikatora sesji, zostaniesz poproszony o wybranie jednej 
 
 ### import
 
-Importuj dane sesji z pliku JSON lub adresu URL udostępniania OpenCode.
+Importuj dane sesji z pliku JSON.
 
 ```bash
 opencode import <file>
 ```
 
-Możesz importować z pliku lokalnego lub adresu URL.
-
 ```bash
 opencode import session.json
-opencode import https://opncd.ai/s/abc123
 ```
 
 ---
@@ -562,7 +558,6 @@ OpenCode można skonfigurować za pomocą zmiennych środowiskowych.
 
 | Zmienna                               | Typ     | Opis                                                       |
 | ------------------------------------- | ------- | ---------------------------------------------------------- |
-| `OPENCODE_AUTO_SHARE`                 | boolean | Automatycznie udostępniaj sesje                            |
 | `OPENCODE_GIT_BASH_PATH`              | string  | Ścieżka do pliku wykonywalnego Git Bash w systemie Windows |
 | `OPENCODE_CONFIG`                     | string  | Ścieżka do pliku konfiguracyjnego                          |
 | `OPENCODE_TUI_CONFIG`                 | string  | Ścieżka do pliku konfiguracyjnego TUI                      |

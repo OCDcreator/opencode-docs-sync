@@ -760,13 +760,12 @@ Dostupna su tri modela bazirana na Claudeu:
 OpenCode koristi mali model za neke AI zadatke kao što je generiranje naslova sesije.
 Podrazumevano je konfigurisan da koristi gpt-5-nano, a hostuje ga Zen. Da zaključate OpenCode
 da biste koristili samo svoju vlastitu instancu koju hostuje GitLab, dodajte sljedeće u svoju
-`opencode.json` fajl. Također se preporučuje da onemogućite dijeljenje sesije.
+`opencode.json` fajl.
 
 ```json
 {
   "$schema": "https://opencode.ai/config.json",
-  "small_model": "gitlab/duo-chat-haiku-4-5",
-  "share": "disabled"
+  "small_model": "gitlab/duo-chat-haiku-4-5"
 }
 ```
 
