@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-10-17T08:26:39.010Z",
+  "lastSync": "2026-10-18T08:44:56.850Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "22e771f5893e255ea78fc10557ed3fb98d3a1072",
-  "upstreamMsg": "fix(util): retry broken-pipe transport failures (#56307)"
+  "upstreamSha": "60a5a6ca7ce176b04cd2321ffd1819b1ea8e6006",
+  "upstreamMsg": "fix(ai): treat null Responses stream fields as absent (#56669)"
 }
