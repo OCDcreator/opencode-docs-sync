@@ -89,7 +89,7 @@ OpenCode 會在啟動時執行 `bun install` 來安裝這些相依套件。之�
 export const MyPlugin = async (ctx) => {
   return {
     "tool.execute.before": async (input, output) => {
-      if (input.tool === "bash") {
+      if (input.tool === "shell") {
         output.args.command = escape(output.args.command)
       }
     },

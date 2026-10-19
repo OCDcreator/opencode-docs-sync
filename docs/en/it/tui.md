@@ -41,7 +41,7 @@ Il contenuto del file viene aggiunto automaticamente alla conversazione.
 
 ---
 
-## Comandi bash
+## Comandi shell
 
 Inizia un messaggio con `!` per eseguire un comando shell.
 

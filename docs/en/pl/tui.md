@@ -41,7 +41,7 @@ Zawartość pliku jest automatycznie dodawana do rozmowy.
 
 ---
 
-## Polecenia Bash
+## Polecenia Shell
 
 Rozpocznij wiadomość od `!`, aby uruchomić polecenie shell.
 

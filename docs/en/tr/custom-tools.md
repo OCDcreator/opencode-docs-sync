@@ -3,7 +3,7 @@ title: Özel Araçlar
 description: LLM'un opencode'da çağırabileceği araçları birleştirebilir.
 ---
 
-Özel araçlar, LLM'un konuşmalar sırasında arayabileceği, oluşturduğunuz işlevlerdir. opencode'un [built-in tools](/docs/tools) ile birlikte `read`, `write` ve `bash` gibi çalışırlar.
+Özel araçlar, LLM'un konuşmalar sırasında arayabileceği, oluşturduğunuz işlevlerdir. opencode'un [built-in tools](/docs/tools) ile birlikte `read`, `write` ve `shell` gibi çalışırlar.
 
 ---
 
@@ -81,12 +81,12 @@ Bu iki araç oluşturur: `math_add` ve `math_multiply`.
 
 Özel araçlar, araç adına göre anahtarlanır. Özel bir araç yerleşik bir araçla aynı adı kullanıyorsa, özel araç önceliklidir.
 
-Örneğin, bu dosya yerleşik `bash` aracının yerini alır:
+Örneğin, bu dosya yerleşik `shell` aracının yerini alır:
 
-```ts title=".opencode/tools/bash.ts"
+```ts title=".opencode/tools/shell.ts"
 
 export default tool({
-  description: "Restricted bash wrapper",
+  description: "Restricted shell wrapper",
   args: {
     command: tool.schema.string(),
   },

@@ -41,7 +41,7 @@ Indholdet i filen tilføjes automatisk til samtalen.
 
 ---
 
-## Bash-kommandoer
+## Shell-kommandoer
 
 Start en besked med `!` for at køre en shell-kommando.
 

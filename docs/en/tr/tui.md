@@ -41,7 +41,7 @@ Dosya içeriği otomatik olarak konuşmaya eklenir.
 
 ---
 
-## Bash komutları
+## Shell komutları
 
 Bir mesajı `!` ile başlatarak shell komutu çalıştırın.
 

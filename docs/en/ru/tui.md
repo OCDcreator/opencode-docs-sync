@@ -41,7 +41,7 @@ How is auth handled in @packages/functions/src/api/index.ts?
 
 ---
 
-## Bash-команды
+## Shell-команды
 
 Начните сообщение с `!`, чтобы запустить shell-команду.
 

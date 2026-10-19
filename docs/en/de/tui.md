@@ -42,7 +42,7 @@ Der Dateiinhalt wird automatisch zur Unterhaltung hinzugefuegt.
 
 ---
 
-## Bash-Befehle
+## Shell-Befehle
 
 Beginne eine Nachricht mit `!`, um einen Shell-Befehl auszufuehren.
 

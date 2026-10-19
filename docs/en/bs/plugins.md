@@ -83,7 +83,7 @@ OpenCode pokreće `bun install` pri pokretanju da ih instalira. Vaši dodaci i a
 export const MyPlugin = async (ctx) => {
   return {
     "tool.execute.before": async (input, output) => {
-      if (input.tool === "bash") {
+      if (input.tool === "shell") {
         output.args.command = escape(output.args.command)
       }
     },

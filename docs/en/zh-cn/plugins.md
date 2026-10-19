@@ -89,7 +89,7 @@ OpenCode 会在启动时运行 `bun install` 来安装这些依赖项。之后�
 export const MyPlugin = async (ctx) => {
   return {
     "tool.execute.before": async (input, output) => {
-      if (input.tool === "bash") {
+      if (input.tool === "shell") {
         output.args.command = escape(output.args.command)
       }
     },

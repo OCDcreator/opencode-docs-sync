@@ -90,7 +90,7 @@ OpenCode รัน `bun install` เมื่อเริ่มต้นเพ�
 export const MyPlugin = async (ctx) => {
   return {
     "tool.execute.before": async (input, output) => {
-      if (input.tool === "bash") {
+      if (input.tool === "shell") {
         output.args.command = escape(output.args.command)
       }
     },

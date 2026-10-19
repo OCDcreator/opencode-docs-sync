@@ -41,7 +41,7 @@ Sadržaj datoteke se automatski dodaje u razgovor.
 
 ---
 
-## Bash naredbe
+## Shell naredbe
 
 Započnite poruku sa `!` da pokrenete komandu ljuske.
 

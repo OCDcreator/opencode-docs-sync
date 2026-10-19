@@ -41,7 +41,7 @@ Innholdet i filen legges automatisk til samtalen.
 
 ---
 
-## Bash-kommandoer
+## Shell-kommandoer
 
 Start en melding med `!` for å kjøre en skallkommando.
 
