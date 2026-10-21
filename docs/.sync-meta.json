@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-10-20T09:18:28.076Z",
+  "lastSync": "2026-10-21T09:15:16.762Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "d30e990c69efd8a954413a724b35c5a27462f320",
-  "upstreamMsg": "sync release versions for v2.1.0 [skip ci]"
+  "upstreamSha": "4d5965762ec5e0d1a0b14630553fc62b51a11fba",
+  "upstreamMsg": "fix(console): remove free model daily request quota from Go FAQ (#57663)"
 }
