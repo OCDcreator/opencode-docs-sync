@@ -50,50 +50,6 @@ The OpenCode CLI also has the following commands.
 
 ---
 
-### agent
-
-Manage agents for OpenCode.
-
-```bash
-opencode agent [command]
-```
-
----
-
-#### create
-
-Create a new agent with custom configuration.
-
-```bash
-opencode agent create
-```
-
-This command will guide you through creating a new agent with a custom system prompt and permission configuration. Anything you don't allow is denied in the generated agent's frontmatter.
-
-#### Flags
-
-| Flag                                        | Short | Description                                                                                                                                                                                                    |
-| ------------------------------------------- | ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|         |       | Directory to write the agent file to (defaults to global or `.opencode/agent` based on the prompt)                                                                                                             |
-|  |       | What the agent should do                                                                                                                                                                                       |
-|         |       | Agent mode: `all`, `primary`, or `subagent`                                                                                                                                                                    |
-|  |       | Comma-separated list of permissions to allow (default: all). Available: `shell`, `read`, `edit`, `glob`, `grep`, `webfetch`, `task`, `websearch`, `lsp`, `skill`. Anything omitted is denied. Alias: `--tools` |
-|        | `-m`  | Model to use, in `provider/model` format                                                                                                                                                                       |
-
-Passing all of `--path`, `--description`, `--mode`, and `--permissions` runs the command non-interactively.
-
----
-
-#### list
-
-List all available agents.
-
-```bash
-opencode agent list
-```
-
----
-
 ### attach
 
 Attach a terminal to an already running OpenCode backend server started via `serve` or `web` commands.
@@ -602,6 +558,42 @@ Debugging and troubleshooting tools.
 
 ```bash
 opencode debug [command]
+```
+
+---
+
+#### agents
+
+List all agents.
+
+```bash
+opencode debug agents
+```
+
+---
+
+#### config
+
+List configuration sources.
+
+```bash
+opencode debug config
+```
+
+---
+
+#### paths
+
+Show global paths (data, config, cache, state).
+
+```bash
+opencode debug paths
+```
+
+Pass a name to print a single path: `db`, `home`, `data`, `config`, `cache`, `state`, `tmp`, `bin`, `log` or `repos`.
+
+```bash
+opencode debug paths db
 ```
 
 ---

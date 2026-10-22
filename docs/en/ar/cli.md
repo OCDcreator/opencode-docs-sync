@@ -46,16 +46,6 @@ opencode [project]
 
 ---
 
-### agent
-
-إدارة وكلاء OpenCode.
-
-```bash
-opencode agent [command]
-```
-
----
-
 ### attach
 
 إرفاق terminal بخادم الواجهة الخلفية لـ OpenCode قيد التشغيل بالفعل، والذي تم تشغيله عبر الأمرين `serve` أو `web`.
@@ -84,28 +74,6 @@ opencode attach http://10.20.30.40:4096
 |      |         | تفريع الجلسة عند المتابعة (استخدمه مع `--continue` أو `--session`)                |
 |  | `-p`    | كلمة مرور المصادقة الأساسية (الافتراضي `OPENCODE_SERVER_PASSWORD`)                |
 |  | `-u`    | اسم مستخدم المصادقة الأساسية (الافتراضي `OPENCODE_SERVER_USERNAME` أو `opencode`) |
-
----
-
-#### create
-
-إنشاء وكيل جديد بإعدادات مخصصة.
-
-```bash
-opencode agent create
-```
-
-سيرشدك هذا الأمر خلال إنشاء وكيل جديد مع موجه نظام مخصص وإعدادات الأدوات.
-
----
-
-#### list
-
-عرض جميع الوكلاء المتاحين.
-
-```bash
-opencode agent list
-```
 
 ---
 

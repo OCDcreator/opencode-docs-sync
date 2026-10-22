@@ -46,16 +46,6 @@ OpenCode CLI には次のコマンドもあります。
 
 ---
 
-### agent
-
-OpenCode のエージェントを管理します。
-
-```bash
-opencode agent [command]
-```
-
----
-
 ### attach
 
 `serve` または `web` コマンドを使用して起動された、すでに実行中の OpenCode バックエンドサーバーにターミナルを接続します。
@@ -84,28 +74,6 @@ opencode attach http://10.20.30.40:4096
 |      |          | 続行時にセッションをフォーク（`--continue` または `--session` と使用）            |
 |  | `-p`     | Basic 認証パスワード（デフォルトは `OPENCODE_SERVER_PASSWORD`）                   |
 |  | `-u`     | Basic 認証ユーザー名（デフォルトは `OPENCODE_SERVER_USERNAME` または `opencode`） |
-
----
-
-#### create
-
-カスタム構成で新しいエージェントを作成します。
-
-```bash
-opencode agent create
-```
-
-このコマンドは、カスタムシステムプロンプトとツール構成を使用して新しいエージェントを作成する手順を示します。
-
----
-
-#### list
-
-利用可能なエージェントをすべてリストします。
-
-```bash
-opencode agent list
-```
 
 ---
 

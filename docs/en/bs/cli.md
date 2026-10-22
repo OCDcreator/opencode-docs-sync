@@ -46,16 +46,6 @@ OpenCode CLI takođe ima sljedeće naredbe.
 
 ---
 
-### agent
-
-Upravljajte OpenCode agentima.
-
-```bash
-opencode agent [command]
-```
-
----
-
 ### attach
 
 Priključite terminal na već pokrenut OpenCode backend server pokrenut putem `serve` ili `web` naredbi.
@@ -84,28 +74,6 @@ opencode attach http://10.20.30.40:4096
 |      |        | Forkuj sesiju prilikom nastavka (koristite sa `--continue` ili `--session`)                   |
 |  | `-p`   | Lozinka za osnovnu autentifikaciju (zadano: `OPENCODE_SERVER_PASSWORD`)                       |
 |  | `-u`   | Korisničko ime za osnovnu autentifikaciju (zadano: `OPENCODE_SERVER_USERNAME` ili `opencode`) |
-
----
-
-#### create
-
-Kreirajte novog agenta s prilagođenom konfiguracijom.
-
-```bash
-opencode agent create
-```
-
-Ova naredba će vas voditi kroz kreiranje novog agenta sa prilagođenim sistemskim promptom i konfiguracijom alata.
-
----
-
-#### list
-
-Navedite sve dostupne agente.
-
-```bash
-opencode agent list
-```
 
 ---
 

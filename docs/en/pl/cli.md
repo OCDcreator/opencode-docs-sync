@@ -46,16 +46,6 @@ Interfejs CLI OpenCode zawiera także dodatkowe polecenia.
 
 ---
 
-### agent
-
-Zarządzaj agentami OpenCode.
-
-```bash
-opencode agent [command]
-```
-
----
-
 ### attach
 
 Dołącz terminal do już działającego serwera backendu OpenCode uruchomionego za pomocą `serve` lub `web`.
@@ -84,28 +74,6 @@ opencode attach http://10.20.30.40:4096
 |      |       | Rozgałęź sesję podczas kontynuowania (użyj z `--continue` lub `--session`)                            |
 |  | `-p`  | Hasło uwierzytelniania podstawowego (domyślnie `OPENCODE_SERVER_PASSWORD`)                            |
 |  | `-u`  | Nazwa użytkownika uwierzytelniania podstawowego (domyślnie `OPENCODE_SERVER_USERNAME` lub `opencode`) |
-
----
-
-#### create
-
-Utwórz nowego agenta z niestandardową konfiguracją.
-
-```bash
-opencode agent create
-```
-
-To polecenie poprowadzi Cię przez proces tworzenia nowego agenta z niestandardowym promptem systemowym i konfiguracją narzędzi.
-
----
-
-#### list
-
-Wyświetl listę wszystkich agentów.
-
-```bash
-opencode agent list
-```
 
 ---
 

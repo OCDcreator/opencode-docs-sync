@@ -46,16 +46,6 @@ La CLI OpenCode dispose également des commandes suivantes.
 
 ---
 
-### agent
-
-Gérer les agents pour OpenCode.
-
-```bash
-opencode agent [command]
-```
-
----
-
 ### attach
 
 Attachez un terminal à un serveur backend OpenCode déjà en cours d'exécution démarré via les commandes `serve` ou `web`.
@@ -84,28 +74,6 @@ opencode attach http://10.20.30.40:4096
 |      |       | Dupliquer la session lors de la reprise (à utiliser avec `--continue` ou `--session`)              |
 |  | `-p`  | Mot de passe d'authentification de base (par défaut `OPENCODE_SERVER_PASSWORD`)                    |
 |  | `-u`  | Nom d'utilisateur d'authentification de base (par défaut `OPENCODE_SERVER_USERNAME` ou `opencode`) |
-
----
-
-#### create
-
-Créez un nouvel agent avec une configuration personnalisée.
-
-```bash
-opencode agent create
-```
-
-Cette commande vous guidera dans la création d'un nouvel agent avec un prompt système personnalisé et une configuration d'outils.
-
----
-
-#### list
-
-Liste tous les agents disponibles.
-
-```bash
-opencode agent list
-```
 
 ---
 
