@@ -89,7 +89,7 @@ OpenCode bunları yüklemek için başlangıçta `bun install` komutunu çalış
 export const MyPlugin = async (ctx) => {
   return {
     "tool.execute.before": async (input, output) => {
-      if (input.tool === "shell") {
+      if (input.tool === "bash") {
         output.args.command = escape(output.args.command)
       }
     },

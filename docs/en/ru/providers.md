@@ -557,7 +557,7 @@ Cloudflare AI Gateway позволяет вам получать доступ к
      "provider": {
        "cloudflare-ai-gateway": {
          "models": {
-           "openai/gpt-4o": {},
+           "openai/gpt-6.1-sol": {},
            "anthropic/claude-sonnet-4": {}
          }
        }

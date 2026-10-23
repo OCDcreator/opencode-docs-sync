@@ -3,7 +3,7 @@ title: Prilagođeni alati
 description: Kreirajte alate koje LLM može pozvati u otvorenom kodu.
 ---
 
-Prilagođeni alati su funkcije koje kreirate i koje LLM može pozvati tokom razgovora. Oni rade zajedno sa [ugrađenim opencode](/docs/tools) alatima kao što su `read`, `write` i `shell`.
+Prilagođeni alati su funkcije koje kreirate i koje LLM može pozvati tokom razgovora. Oni rade zajedno sa [ugrađenim opencode](/docs/tools) alatima kao što su `read`, `write` i `bash`.
 
 ---
 
@@ -81,12 +81,12 @@ Ovo stvara dva alata: `math_add` i `math_multiply`.
 
 Prilagođeni alati su prepoznati po imenu. Ako prilagođeni alat koristi isto ime kao ugrađeni alat, prilagođeni alat ima prednost.
 
-Na primjer, ova datoteka zamjenjuje ugrađeni `shell` alat:
+Na primjer, ova datoteka zamjenjuje ugrađeni `bash` alat:
 
-```ts title=".opencode/tools/shell.ts"
+```ts title=".opencode/tools/bash.ts"
 
 export default tool({
-  description: "Restricted shell wrapper",
+  description: "Restricted bash wrapper",
   args: {
     command: tool.schema.string(),
   },

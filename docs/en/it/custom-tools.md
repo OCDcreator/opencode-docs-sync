@@ -3,7 +3,7 @@ title: Strumenti personalizzati
 description: Crea strumenti che l'LLM puo chiamare in opencode.
 ---
 
-Gli strumenti personalizzati sono funzioni che crei e che l'LLM puo chiamare durante le conversazioni. Funzionano insieme agli [strumenti integrati](/docs/tools) di opencode come `read`, `write` e `shell`.
+Gli strumenti personalizzati sono funzioni che crei e che l'LLM puo chiamare durante le conversazioni. Funzionano insieme agli [strumenti integrati](/docs/tools) di opencode come `read`, `write` e `bash`.
 
 ---
 
@@ -81,12 +81,12 @@ Questo crea due strumenti: `math_add` e `math_multiply`.
 
 Gli strumenti personalizzati sono indicizzati per nome. Se uno strumento personalizzato usa lo stesso nome di uno strumento integrato, quello personalizzato ha la precedenza.
 
-Per esempio, questo file sostituisce lo strumento `shell` integrato:
+Per esempio, questo file sostituisce lo strumento `bash` integrato:
 
-```ts title=".opencode/tools/shell.ts"
+```ts title=".opencode/tools/bash.ts"
 
 export default tool({
-  description: "Restricted shell wrapper",
+  description: "Restricted bash wrapper",
   args: {
     command: tool.schema.string(),
   },

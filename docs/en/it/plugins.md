@@ -89,7 +89,7 @@ OpenCode esegue `bun install` all'avvio per installarle. I tuoi plugin e strumen
 export const MyPlugin = async (ctx) => {
   return {
     "tool.execute.before": async (input, output) => {
-      if (input.tool === "shell") {
+      if (input.tool === "bash") {
         output.args.command = escape(output.args.command)
       }
     },

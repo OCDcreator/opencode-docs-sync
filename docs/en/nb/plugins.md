@@ -90,7 +90,7 @@ OpenCode kjører `bun install` ved oppstart for å installere disse. Programtill
 export const MyPlugin = async (ctx) => {
   return {
     "tool.execute.before": async (input, output) => {
-      if (input.tool === "shell") {
+      if (input.tool === "bash") {
         output.args.command = escape(output.args.command)
       }
     },

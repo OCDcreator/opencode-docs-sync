@@ -89,7 +89,7 @@ O opencode executa `bun install` na inicialização para instalar esses pacotes.
 export const MyPlugin = async (ctx) => {
   return {
     "tool.execute.before": async (input, output) => {
-      if (input.tool === "shell") {
+      if (input.tool === "bash") {
         output.args.command = escape(output.args.command)
       }
     },

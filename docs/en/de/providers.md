@@ -557,7 +557,7 @@ Mit dem Cloudflare AI Gateway können Sie über einen einheitlichen Endpunkt auf
      "provider": {
        "cloudflare-ai-gateway": {
          "models": {
-           "openai/gpt-4o": {},
+           "openai/gpt-6.1-sol": {},
            "anthropic/claude-sonnet-4": {}
          }
        }

@@ -90,7 +90,7 @@ OpenCode ejecuta `bun install` al inicio para instalarlos. Luego, sus complement
 export const MyPlugin = async (ctx) => {
   return {
     "tool.execute.before": async (input, output) => {
-      if (input.tool === "shell") {
+      if (input.tool === "bash") {
         output.args.command = escape(output.args.command)
       }
     },
