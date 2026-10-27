@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-10-26T09:57:24.594Z",
+  "lastSync": "2026-10-27T09:42:33.534Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "ed74ec82ce1fe3a36da6c0815a935473ef4bb0fb",
-  "upstreamMsg": "fix(httpapi-codegen): emit flat Promise input field types (#58875)"
+  "upstreamSha": "86976449c40d48f2731553a024f74552593d1764",
+  "upstreamMsg": "release: v2.2.0 (#59558)"
 }
