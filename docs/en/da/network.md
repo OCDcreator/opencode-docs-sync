@@ -22,9 +22,9 @@ export HTTP_PROXY=http://proxy.example.com:8080
 export NO_PROXY=localhost,127.0.0.1
 ```
 
-> **Caution**
->
-> TUI kommunikerer med en lokal HTTP-server. Du skal omgå proxyen for denne forbindelse for at forhindre routingsløjfer.
+:::caution[Caution]
+TUI kommunikerer med en lokal HTTP-server. Du skal omgå proxyen for denne forbindelse for at forhindre routingsløjfer.
+:::
 
 Du kan konfigurere serverens port og værtsnavn ved hjælp af [CLI flags](/docs/cli#run).
 
@@ -38,9 +38,9 @@ Hvis din proxy kræver grundlæggende godkendelse, skal du inkludere legitimatio
 export HTTPS_PROXY=http://username:password@proxy.example.com:8080
 ```
 
-> **Caution**
->
-> Undgå hardkodning af adgangskoder. Brug miljøvariabler eller sikker lagring af legitimationsoplysninger.
+:::caution[Caution]
+Undgå hardkodning af adgangskoder. Brug miljøvariabler eller sikker lagring af legitimationsoplysninger.
+:::
 
 For proxyer, der kræver avanceret godkendelse som NTLM eller Kerberos, kan du overveje at bruge en LLM Gateway, der understøtter din godkendelsesmetode.
 

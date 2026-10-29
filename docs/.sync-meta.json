@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-10-28T10:27:50.633Z",
+  "lastSync": "2026-10-29T10:47:41.930Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "d6867f221061f7688a9b784b840ec6b7e3c9d40a",
-  "upstreamMsg": "fix(stats): dismiss mobile chart tooltips on scroll-away and outside taps (#59865)"
+  "upstreamSha": "726cf096396d5014c3b1845e231cc01efe0421ee",
+  "upstreamMsg": "feat(tui): add dialog footer theme override and retire faint in new designs (#60003)"
 }

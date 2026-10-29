@@ -602,9 +602,9 @@ Nøglen `experimental` indeholder muligheder, der er under aktiv udvikling.
 }
 ```
 
-> **Caution**
->
-> Eksperimentelle muligheder er ikke stabile. De kan ændres eller fjernes uden varsel.
+:::caution[Caution]
+Eksperimentelle muligheder er ikke stabile. De kan ændres eller fjernes uden varsel.
+:::
 
 ---
 

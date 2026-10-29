@@ -31,13 +31,14 @@ Hvis du foretrækker OpenCode Desktop-appen, men vil køre serveren i WSL:
 >
 > Hvis `localhost` ikke virker i din opsætning, så forbind i stedet med WSL-IP-adressen (fra WSL: `hostname -I`) og brug `http://<wsl-ip>:4096`.
 
-> **Caution**
->
-> Når du bruger `--hostname 0.0.0.0`, skal du sætte `OPENCODE_SERVER_PASSWORD` for at sikre serveren.
-> 
-> ```bash
-> OPENCODE_SERVER_PASSWORD=your-password opencode serve --hostname 0.0.0.0
-> ```
+:::caution[Caution]
+Når du bruger `--hostname 0.0.0.0`, skal du sætte `OPENCODE_SERVER_PASSWORD` for at sikre serveren.
+
+```bash
+OPENCODE_SERVER_PASSWORD=your-password opencode serve --hostname 0.0.0.0
+```
+
+:::
 
 ---
 

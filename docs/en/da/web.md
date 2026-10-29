@@ -17,9 +17,9 @@ opencode web
 
 Dette starter en lokal server på `127.0.0.1` med en tilfældig tilgængelig port og åbner automatisk OpenCode i din standardbrowser.
 
-> **Caution**
->
-> Hvis `OPENCODE_SERVER_PASSWORD` ikke er indstillet, vil serveren være usikret. Dette er fint til lokal brug, men bør indstilles til netværksadgang.
+:::caution[Caution]
+Hvis `OPENCODE_SERVER_PASSWORD` ikke er indstillet, vil serveren være usikret. Dette er fint til lokal brug, men bør indstilles til netværksadgang.
+:::
 
 :::tip[Windows-brugere]
 For den bedste oplevelse skal du køre `opencode web` fra [WSL](/docs/windows-wsl) i stedet for PowerShell. Dette sikrer korrekt filsystemadgang og terminalintegration.

@@ -309,9 +309,9 @@ Hvis dette ikke er indstillet, vil agenten fortsætte med at iterere, indtil mod
 
 Når grænsen er nået, modtager agenten en speciel systemprompt, der instruerer den om at svare med en opsummering af sit arbejde og anbefalede resterende opgaver.
 
-> **Caution**
->
-> Det gamle `maxSteps`-felt er forældet. Brug `steps` i stedet.
+:::caution[Caution]
+Det gamle `maxSteps`-felt er forældet. Brug `steps` i stedet.
+:::
 
 ---
 
