@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-10-29T10:47:41.930Z",
+  "lastSync": "2026-10-30T10:46:51.016Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "726cf096396d5014c3b1845e231cc01efe0421ee",
-  "upstreamMsg": "feat(tui): add dialog footer theme override and retire faint in new designs (#60003)"
+  "upstreamSha": "c6c5d36b8ac17e15351b71f136b3034e5d65dfec",
+  "upstreamMsg": "fix(tui): span vertical session tab pulse across full tab width (#60338)"
 }
