@@ -45,15 +45,17 @@ Você pode personalizar a URL base para qualquer provedor definindo a opção `b
 
 ---
 
-## OpenCode Zen
+<a id="opencode-zen"></a>
 
-OpenCode Zen é uma lista de modelos fornecidos pela equipe do opencode que foram testados e verificados para funcionar bem com o opencode. [Saiba mais](https://opencode.ai/v2/docs/console/).
+## OpenCode Models
+
+OpenCode Models é uma lista de modelos fornecidos pela equipe do opencode que foram testados e verificados para funcionar bem com o opencode. [Saiba mais](https://opencode.ai/v2/docs/console/).
 
 > **Tip**
 >
-> Se você é novo, recomendamos começar com o OpenCode Zen.
+> Se você é novo, recomendamos começar com o OpenCode Models.
 
-1. Execute o comando `/connect` no TUI, selecione `OpenCode Zen` e acesse [opencode.ai/zen](https://opencode.ai/zen).
+1. Execute o comando `/connect` no TUI, selecione `OpenCode` e acesse [opencode.ai/auth](https://opencode.ai/auth).
 
    ```txt
    /connect
@@ -85,7 +87,7 @@ Funciona como qualquer outro provedor no opencode e é completamente opcional.
 OpenCode Go é um plano de assinatura de baixo custo que fornece acesso confiável a modelos de codificação abertos populares fornecidos pela equipe do opencode que foram
 testados e verificados para funcionar bem com o opencode.
 
-1. Execute o comando `/connect` no TUI, selecione `OpenCode Go` e acesse [opencode.ai/zen](https://opencode.ai/zen).
+1. Execute o comando `/connect` no TUI, selecione `OpenCode Go` e acesse [opencode.ai/auth](https://opencode.ai/auth).
 
    ```txt
    /connect
@@ -758,7 +760,7 @@ GitLab Duo fornece um chat agente com suporte a ferramentas nativas através do 
 
 :::note[nota de conformidade]
 opencode usa um pequeno modelo para algumas tarefas de AI, como gerar o título da sessão.
-Ele está configurado para usar gpt-5-nano por padrão, hospedado pela Zen. Para bloquear o opencode
+Ele está configurado para usar gpt-5-nano por padrão, hospedado pela OpenCode. Para bloquear o opencode
 para usar apenas sua própria instância hospedada do GitLab, adicione o seguinte ao seu
 arquivo `opencode.json`.
 
@@ -1397,13 +1399,15 @@ Se você já tiver uma chave da API, pode selecionar **Inserir chave da API manu
 
 ---
 
-### OpenCode Zen
+<a id="opencode-zen-1"></a>
 
-OpenCode Zen é uma lista de modelos testados e verificados fornecidos pela equipe do opencode. [Saiba mais](https://opencode.ai/v2/docs/console/).
+### OpenCode Models
 
-1. Faça login em **<a href={console}>OpenCode Zen</a>** e clique em **Criar Chave da API**.
+OpenCode Models é uma lista de modelos testados e verificados fornecidos pela equipe do opencode. [Saiba mais](https://opencode.ai/v2/docs/console/).
 
-2. Execute o comando `/connect` e procure por **OpenCode Zen**.
+1. Faça login em **<a href={console}>OpenCode Console</a>** e clique em **Criar Chave da API**.
+
+2. Execute o comando `/connect` e procure por **OpenCode**.
 
    ```txt
    /connect

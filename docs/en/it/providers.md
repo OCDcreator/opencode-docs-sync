@@ -47,14 +47,16 @@ Puoi personalizzare l'URL base per qualsiasi provider impostando l'opzione `base
 
 ---
 
-## OpenCode Zen
+<a id="opencode-zen"></a>
 
-OpenCode Zen e una lista di modelli forniti dal team OpenCode, testati e
+## OpenCode Models
+
+OpenCode Models e una lista di modelli forniti dal team OpenCode, testati e
 verificati per funzionare bene con OpenCode. [Scopri di piu](https://opencode.ai/v2/docs/console/).
 
 > **Tip**
 >
-> Se sei all'inizio, ti consigliamo di partire da OpenCode Zen.
+> Se sei all'inizio, ti consigliamo di partire da OpenCode Models.
 
 1. Esegui `/connect` nella TUI, seleziona opencode e vai su [opencode.ai/auth](https://opencode.ai/auth).
 
@@ -732,7 +734,7 @@ GitLab Duo fornisce una chat agentic basata su AI con capacità di chiamata stru
 
 :::note[nota di compliance]
 OpenCode usa un modello piccolo per alcuni task AI come generare il titolo della sessione.
-È configurato per usare gpt-5-nano di default, ospitato da Zen. Per bloccare OpenCode
+È configurato per usare gpt-5-nano di default, ospitato da OpenCode. Per bloccare OpenCode
 a usare solo la tua istanza GitLab self-hosted, aggiungi quanto segue al tuo
 file `opencode.json`.
 
@@ -1372,13 +1374,15 @@ Se hai già una chiave API, puoi selezionare **Manually enter API Key** e incoll
 
 ---
 
-### OpenCode Zen
+<a id="opencode-zen-1"></a>
 
-OpenCode Zen è una lista di modelli testati e verificati forniti dal team OpenCode. [Scopri di più](https://opencode.ai/v2/docs/console/).
+### OpenCode Models
 
-1. Accedi a **<a href={console}>OpenCode Zen</a>** e clicca **Create API Key**.
+OpenCode Models è una lista di modelli testati e verificati forniti dal team OpenCode. [Scopri di più](https://opencode.ai/v2/docs/console/).
 
-2. Esegui il comando `/connect` e cerca **OpenCode Zen**.
+1. Accedi a **<a href={console}>OpenCode Console</a>** e clicca **Create API Key**.
+
+2. Esegui il comando `/connect` e cerca **OpenCode**.
 
    ```txt
    /connect

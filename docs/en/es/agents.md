@@ -367,7 +367,7 @@ Utilice la configuración `model` para anular el modelo de este agente. Útil pa
 }
 ```
 
-El ID del modelo en su configuración OpenCode usa el formato `provider/model-id`. Por ejemplo, si usa [OpenCode Zen](https://opencode.ai/v2/docs/console/), usaría `opencode/gpt-6.1-sol` para GPT-6.1 Sol.
+El ID del modelo en su configuración OpenCode usa el formato `provider/model-id`. Por ejemplo, si usa [OpenCode Models](https://opencode.ai/v2/docs/console/), usaría `opencode/gpt-6.1-sol` para GPT-6.1 Sol.
 
 ---
 

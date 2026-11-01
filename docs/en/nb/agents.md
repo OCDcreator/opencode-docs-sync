@@ -366,7 +366,7 @@ Bruk `model`-konfigurasjonen for å overstyre modellen for denne agenten. Nyttig
 }
 ```
 
-Modellen ID i OpenCode-konfigurasjonen din bruker formatet `provider/model-id`. For eksempel, hvis du bruker [OpenCode Zen](https://opencode.ai/v2/docs/console/), vil du bruke `opencode/gpt-6.1-sol` for GPT-6.1 Sol.
+Modellen ID i OpenCode-konfigurasjonen din bruker formatet `provider/model-id`. For eksempel, hvis du bruker [OpenCode Models](https://opencode.ai/v2/docs/console/), vil du bruke `opencode/gpt-6.1-sol` for GPT-6.1 Sol.
 
 ---
 

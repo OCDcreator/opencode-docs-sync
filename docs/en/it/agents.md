@@ -365,7 +365,7 @@ Usa la config `model` per sovrascrivere il modello per questo agente. Utile per 
 }
 ```
 
-L'ID modello nella configurazione OpenCode usa il formato `provider/model-id`. Per esempio, se stai usando [OpenCode Zen](https://opencode.ai/v2/docs/console/), useresti `opencode/gpt-6.1-sol` per GPT-6.1 Sol.
+L'ID modello nella configurazione OpenCode usa il formato `provider/model-id`. Per esempio, se stai usando [OpenCode Models](https://opencode.ai/v2/docs/console/), useresti `opencode/gpt-6.1-sol` per GPT-6.1 Sol.
 
 ---
 

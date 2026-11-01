@@ -367,7 +367,7 @@ Brug `model`-konfigurationen til at tilsidesætte modeller for denne agent. Nytt
 }
 ```
 
-Model-id'et i din OpenCode-konfiguration brugerformatet `provider/model-id`. For eksempel, hvis du bruger [OpenCode Zen](https://opencode.ai/v2/docs/console/), vil du bruge `opencode/gpt-6.1-sol` til GPT-6.1 Sol.
+Model-id'et i din OpenCode-konfiguration brugerformatet `provider/model-id`. For eksempel, hvis du bruger [OpenCode Models](https://opencode.ai/v2/docs/console/), vil du bruge `opencode/gpt-6.1-sol` til GPT-6.1 Sol.
 
 ---
 
