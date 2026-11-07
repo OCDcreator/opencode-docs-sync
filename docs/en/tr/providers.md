@@ -52,7 +52,7 @@ config.
 ## OpenCode Models
 
 OpenCode Models, opencode ekibi tarafından sağlanan modellerin bir listesidir.
-opencode ile iyi çalıştığı test edilip doğrulandı. [Daha fazla bilgi](https://opencode.ai/v2/docs/console/).
+opencode ile iyi çalıştığı test edilip doğrulandı. [Daha fazla bilgi](https://opencode.ai/docs/console/).
 
 > **Tip**
 >
@@ -1401,7 +1401,7 @@ Zaten bir API anahtarınız varsa, **API Anahtarını Manuel Olarak Girin** seç
 
 ### OpenCode Models
 
-OpenCode Models, opencode ekibinin test edip doğruladığı modellerin bir listesidir. [Daha fazla bilgi](https://opencode.ai/v2/docs/console/).
+OpenCode Models, opencode ekibinin test edip doğruladığı modellerin bir listesidir. [Daha fazla bilgi](https://opencode.ai/docs/console/).
 
 1. **<a href={console}>OpenCode Console</a>**'de oturum açın ve **API Anahtarı Oluştur**'u tıklayın.
 

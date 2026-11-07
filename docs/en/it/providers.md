@@ -52,7 +52,7 @@ Puoi personalizzare l'URL base per qualsiasi provider impostando l'opzione `base
 ## OpenCode Models
 
 OpenCode Models e una lista di modelli forniti dal team OpenCode, testati e
-verificati per funzionare bene con OpenCode. [Scopri di piu](https://opencode.ai/v2/docs/console/).
+verificati per funzionare bene con OpenCode. [Scopri di piu](https://opencode.ai/docs/console/).
 
 > **Tip**
 >
@@ -1378,7 +1378,7 @@ Se hai già una chiave API, puoi selezionare **Manually enter API Key** e incoll
 
 ### OpenCode Models
 
-OpenCode Models è una lista di modelli testati e verificati forniti dal team OpenCode. [Scopri di più](https://opencode.ai/v2/docs/console/).
+OpenCode Models è una lista di modelli testati e verificati forniti dal team OpenCode. [Scopri di più](https://opencode.ai/docs/console/).
 
 1. Accedi a **<a href={console}>OpenCode Console</a>** e clicca **Create API Key**.
 

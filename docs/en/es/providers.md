@@ -52,7 +52,7 @@ Puede personalizar la URL base para cualquier proveedor configurando la opción 
 ## OpenCode Models
 
 OpenCode Models es una lista de modelos proporcionados por el equipo OpenCode que han sido
-probado y verificado para funcionar bien con OpenCode. [Más información](https://opencode.ai/v2/docs/console/).
+probado y verificado para funcionar bien con OpenCode. [Más información](https://opencode.ai/docs/console/).
 
 > **Tip**
 >
@@ -1402,7 +1402,7 @@ Si ya tiene una clave API, puede seleccionar **Ingresar manualmente la clave API
 
 ### OpenCode Models
 
-OpenCode Models es una lista de modelos probados y verificados proporcionada por el equipo OpenCode. [Más información](https://opencode.ai/v2/docs/console/).
+OpenCode Models es una lista de modelos probados y verificados proporcionada por el equipo OpenCode. [Más información](https://opencode.ai/docs/console/).
 
 1. Inicie sesión en **<a href={console}>OpenCode Console</a>** y haga clic en **Crear API clave**.
 

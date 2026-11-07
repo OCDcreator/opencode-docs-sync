@@ -50,7 +50,7 @@ OpenCode 설정의 `provider` 섹션을 통해 공급자를 사용자 정의할 
 
 ## OpenCode Models
 
-OpenCode Models은 OpenCode 팀이 OpenCode와 잘 작동하도록 테스트하고 검증한 모델 목록입니다. [더 알아보기](https://opencode.ai/v2/docs/console/).
+OpenCode Models은 OpenCode 팀이 OpenCode와 잘 작동하도록 테스트하고 검증한 모델 목록입니다. [더 알아보기](https://opencode.ai/docs/console/).
 
 > **Tip**
 >
@@ -1398,7 +1398,7 @@ OpenCode로 Ollama Cloud를 사용하려면:
 
 ### OpenCode Models
 
-OpenCode Models은 OpenCode 팀에서 제공하는 테스트 및 검증된 모델 목록입니다. [더 알아보기](https://opencode.ai/v2/docs/console/).
+OpenCode Models은 OpenCode 팀에서 제공하는 테스트 및 검증된 모델 목록입니다. [더 알아보기](https://opencode.ai/docs/console/).
 
 1. **<a href={console}>OpenCode Console</a>**에 로그인하고 **Create API Key**를 클릭합니다.
 

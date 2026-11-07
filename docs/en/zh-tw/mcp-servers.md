@@ -23,7 +23,7 @@ description: 新增本地和遠端 MCP 工具。
 
 ## 啟用
 
-您可以在 [OpenCode 設定](https://opencode.ai/docs/config/)的 `mcp` 欄位下定義 MCP 伺服器。為每個 MCP 指定一個唯一的名稱，在提示詞中可以透過該名稱來參照對應的 MCP。
+您可以在 [OpenCode 設定](/docs/config/)的 `mcp` 欄位下定義 MCP 伺服器。為每個 MCP 指定一個唯一的名稱，在提示詞中可以透過該名稱來參照對應的 MCP。
 
 ```jsonc title="opencode.jsonc" {6}
 {

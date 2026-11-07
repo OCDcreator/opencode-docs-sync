@@ -52,7 +52,7 @@ opencode использует [AI SDK](https://ai-sdk.dev/) и [Models.dev](http
 ## OpenCode Models
 
 OpenCode Models — это список моделей, предоставленный командой opencode, которые были
-протестировано и проверено на хорошую работу с opencode. [Подробнее](https://opencode.ai/v2/docs/console/).
+протестировано и проверено на хорошую работу с opencode. [Подробнее](https://opencode.ai/docs/console/).
 
 > **Tip**
 >
@@ -1400,7 +1400,7 @@ IO.NET предлагает 17 моделей, оптимизированных 
 
 ### OpenCode Models
 
-OpenCode Models — это список протестированных и проверенных моделей, предоставленный командой opencode. [Подробнее](https://opencode.ai/v2/docs/console/).
+OpenCode Models — это список протестированных и проверенных моделей, предоставленный командой opencode. [Подробнее](https://opencode.ai/docs/console/).
 
 1. Войдите в систему **<a href={console}>OpenCode Console</a>** и нажмите **Создать ключ API**.
 

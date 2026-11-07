@@ -52,7 +52,7 @@ config.
 ## OpenCode Models
 
 OpenCode Models は、OpenCode チームが提供するモデルのリストです。
-OpenCode で適切に動作することがテストおよび検証されています。 [詳細はこちら](https://opencode.ai/v2/docs/console/)。
+OpenCode で適切に動作することがテストおよび検証されています。 [詳細はこちら](https://opencode.ai/docs/console/)。
 
 > **Tip**
 >
@@ -1410,7 +1410,7 @@ OpenCode で Ollama Cloud を使用するには:
 
 ### OpenCode Models
 
-OpenCode Models は、OpenCode チームによって提供される、テストおよび検証されたモデルのリストです。 [詳細はこちら](https://opencode.ai/v2/docs/console/)。
+OpenCode Models は、OpenCode チームによって提供される、テストおよび検証されたモデルのリストです。 [詳細はこちら](https://opencode.ai/docs/console/)。
 
 1. **<a href={console}>OpenCode Console</a>** にサインインし、**API キーの作成** をクリックします。
 

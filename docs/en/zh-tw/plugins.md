@@ -323,7 +323,7 @@ export const MyPlugin = async ({ client }) => {
 }
 ```
 
-日誌層級：`debug`、`info`、`warn`、`error`。詳情請參閱 [SDK 文件](https://opencode.ai/docs/sdk)。
+日誌層級：`debug`、`info`、`warn`、`error`。詳情請參閱 [SDK 文件](/docs/sdk)。
 
 ---
 

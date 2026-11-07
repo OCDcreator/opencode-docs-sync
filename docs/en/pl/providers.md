@@ -52,7 +52,7 @@ Możesz dostosować podstawowy adres URL dla dowolnego dostawcy, ustawiając opc
 ## OpenCode Models
 
 OpenCode Models to lista modeli dostarczonych przez zespół opencode, które zostały
-przetestowane i zweryfikowane, aby dobrze współpracować z opencode. [Dowiedz się więcej](https://opencode.ai/v2/docs/console/).
+przetestowane i zweryfikowane, aby dobrze współpracować z opencode. [Dowiedz się więcej](https://opencode.ai/docs/console/).
 
 > **Tip**
 >
@@ -1399,7 +1399,7 @@ Jeśli posiadasz już klucz API, możesz wybrać opcję **Wprowadź klucz API r�
 
 ### OpenCode Models
 
-OpenCode Models to lista przetestowanych i zweryfikowanych modeli udostępniona przez zespół opencode. [Dowiedz się więcej](https://opencode.ai/v2/docs/console/).
+OpenCode Models to lista przetestowanych i zweryfikowanych modeli udostępniona przez zespół opencode. [Dowiedz się więcej](https://opencode.ai/docs/console/).
 
 1. Zaloguj się do **<a href={console}>OpenCode Console</a>** i kliknij **Utwórz klucz API**.
 

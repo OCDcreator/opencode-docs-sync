@@ -52,7 +52,7 @@ Du kan tilpasse base-URL-en for enhver leverandør ved å angi alternativet `bas
 ## OpenCode Models
 
 OpenCode Models er en liste over modeller levert av OpenCode-teamet som har vært
-testet og verifisert for å fungere godt med OpenCode. [Finn ut mer](https://opencode.ai/v2/docs/console/).
+testet og verifisert for å fungere godt med OpenCode. [Finn ut mer](https://opencode.ai/docs/console/).
 
 > **Tip**
 >
@@ -1402,7 +1402,7 @@ Hvis du allerede har en API-nøkkel, kan du velge **Angi API-nøkkel manuelt** o
 
 ### OpenCode Models
 
-OpenCode Models er en liste over testede og verifiserte modeller levert av OpenCode-teamet. [Finn ut mer](https://opencode.ai/v2/docs/console/).
+OpenCode Models er en liste over testede og verifiserte modeller levert av OpenCode-teamet. [Finn ut mer](https://opencode.ai/docs/console/).
 
 1. Logg på **<a href={console}>OpenCode Console</a>** og klikk på **Create API Key**.
 
