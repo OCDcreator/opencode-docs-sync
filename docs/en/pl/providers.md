@@ -753,7 +753,7 @@ GitLab Duo zapewnia czat agentowy oparty na sztucznej inteligencji z natywnymi m
 
 ##### Self-Hosted GitLab
 
-:::note[compliance note]
+:::note[Uwaga dotycząca zgodności]
 opencode używa małego modelu do niektórych zadań AI, takich jak generowanie tytułu sesji.
 Domyślnie jest skonfigurowany do używania gpt-5-nano, hostowanego przez OpenCode. Aby zablokować opencode
 aby używać tylko własnej instancji hostowanej przez GitLab, dodaj następujące elementy do pliku
