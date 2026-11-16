@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-11-15T11:50:56.668Z",
+  "lastSync": "2026-11-16T12:33:34.466Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "d432a06b9c07bab0be4e8d642173b1cb14137f11",
-  "upstreamMsg": "fix(core): preserve UTF-8 across shell output pages (#63984)"
+  "upstreamSha": "fd95bf0d2107cda41762e20d2b55c8f35459e4d7",
+  "upstreamMsg": "fix(browser): space URL bar action buttons 6px apart (#64214)"
 }
