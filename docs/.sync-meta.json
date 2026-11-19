@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-11-18T12:51:56.447Z",
+  "lastSync": "2026-11-19T12:43:11.992Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "79bd2c6f11fd5ad011dbe5a1c31343c46e1e5294",
-  "upstreamMsg": "fix(core): match file permission rules without case on macOS (#64626)"
+  "upstreamSha": "88c90d08add7dd899a0caefc15609fdbb1d4b2ed",
+  "upstreamMsg": "feat(app): add previous and next match buttons to conversation search (#64865)"
 }
