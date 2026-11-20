@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-11-19T12:43:11.992Z",
+  "lastSync": "2026-11-20T12:40:14.178Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "88c90d08add7dd899a0caefc15609fdbb1d4b2ed",
-  "upstreamMsg": "feat(app): add previous and next match buttons to conversation search (#64865)"
+  "upstreamSha": "85951cb08614dfe6443905552cae49d59d2d6615",
+  "upstreamMsg": "fix(session-ui): show subagent status as a colored bar and word in the New timeline (#65164)"
 }
