@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-11-21T12:21:30.074Z",
+  "lastSync": "2026-11-22T12:24:18.607Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "ba5bbef82c9fc27e033a12ca50657f4ec8d629da",
-  "upstreamMsg": "fix(desktop): draw the Windows caption buttons in the contrast theme's text colour (#65324)"
+  "upstreamSha": "ee5fe34e136488a1839ac73bcca8321c51a31b75",
+  "upstreamMsg": "feat(data): add new models section and yesterday leaderboard (#65541)"
 }
