@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-11-22T12:24:18.607Z",
+  "lastSync": "2026-11-23T14:15:53.080Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "ee5fe34e136488a1839ac73bcca8321c51a31b75",
-  "upstreamMsg": "feat(data): add new models section and yesterday leaderboard (#65541)"
+  "upstreamSha": "9b03fe1f65e8b28f3e39544d295d0d949f2fa6bf",
+  "upstreamMsg": "fix(app): mark /btw tabs answered in the background as unread (#65821)"
 }
