@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-11-23T14:15:53.080Z",
+  "lastSync": "2026-11-24T14:41:28.476Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "9b03fe1f65e8b28f3e39544d295d0d949f2fa6bf",
-  "upstreamMsg": "fix(app): mark /btw tabs answered in the background as unread (#65821)"
+  "upstreamSha": "af54caef70f9bc1d700d9bfd5b4f2f7471deadd8",
+  "upstreamMsg": "fix(core): refuse plugin automation creates before configured permissions load (#66109)"
 }
