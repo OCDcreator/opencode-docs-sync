@@ -1,7 +1,7 @@
 {
-  "lastSync": "2026-11-27T13:39:12.066Z",
+  "lastSync": "2026-11-28T12:49:35.564Z",
   "upstreamRepo": "anomalyco/opencode",
   "upstreamRef": "dev",
-  "upstreamSha": "740bd1d732fc857957f3d3ea1f1ce2c682d9b18e",
-  "upstreamMsg": "feat(ui): add icon audits to Components Lab (#66768)"
+  "upstreamSha": "2204311ec6e966db8d67988ab3638ad95a811a46",
+  "upstreamMsg": "fix(site): finish the docs UI labels and stamp intentional English (#66964)"
 }
